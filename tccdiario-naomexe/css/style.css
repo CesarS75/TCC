@@ -1,0 +1,72 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+}
+#pages{
+    background-color: rgb(197, 117, 217);
+    width: 85vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+h3, .mg{
+    margin-right: 2vw;
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#logo{
+    background-color: rgb(91, 47, 105);
+    width: 10vw;
+    height: 8vh;
+}
+#mode{
+    background-color: rgb(117, 19, 150);
+    width: 5vw;
+    height: 8vh;
+}
+#slideshow-1{
+    width: 15vw;
+    height: 25vh;
+    background-color: cornflowerblue;
+    border-radius: 25px;
+}
+#slideshow-2{
+    width: 15vw;
+    height: 25vh;
+    background-color: cornflowerblue;
+    border-radius: 25px;
+}
+#slideshow-3{
+    width: 15vw;
+    height: 25vh;
+    background-color: cornflowerblue;
+    border-radius: 25px;
+}
+#slides{
+    background-color: aquamarine;
+    display: flex;
+    width: 55%;
+    height: 30%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+#centraliza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    width: 100vw;
+    height: 92vh;
+}
