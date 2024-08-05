@@ -36,14 +36,38 @@ h3, .mg{
     height: 8vh;
 }
 #slideshow-1{
-}
-#slideshow-2{
-}
-#slideshow-3{
-}
-#slides{
-    background-color: aquamarine;
+    background-color: bisque;
     display: flex;
     width: 40vw;
     height: 25vh;
+    text-decoration: none;
+    border-radius: 20%;
+    justify-content: space-between;
+}
+#slideshow-2{
+    display: flex;
+    width: 40vw;
+    height: 25vh;
+    text-decoration: none;
+}
+#slideshow-3{
+    display: flex;
+    width: 40vw;
+    height: 25vh;
+    text-decoration: none;
+}
+#slides{
+    border: 2px solid black;
+    display: flex;
+    width: 50vw;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+}
+#section_slides{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
