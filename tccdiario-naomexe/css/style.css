@@ -36,31 +36,43 @@ h3, .mg{
     height: 8vh;
 }
 #slideshow-1{
-    background-color: bisque;
+    background-color: rgb(189, 94, 240);
+    color: black;
     display: flex;
     width: 40vw;
     height: 25vh;
     text-decoration: none;
     border-radius: 20%;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 2%;
 }
 #slideshow-2{
+    background-color: rgb(189, 94, 240);
+    color: black;
     display: flex;
     width: 40vw;
     height: 25vh;
     text-decoration: none;
+    border-radius: 20%;
+    justify-content: center;
+    margin: 2%;
 }
 #slideshow-3{
+    background-color: rgb(189, 94, 240);
+    color: black;
     display: flex;
     width: 40vw;
     height: 25vh;
     text-decoration: none;
+    border-radius: 20%;
+    justify-content: center;
+    margin: 2%;
 }
 #slides{
     border: 2px solid black;
     display: flex;
     width: 50vw;
-    height: 30vh;
+    height: 50vh;
     justify-content: space-between;
     align-items: center;
 }
