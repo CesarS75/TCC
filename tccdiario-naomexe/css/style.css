@@ -9,15 +9,16 @@ header{
 }
 nav{
     background-color: rgb(197, 117, 217);
-    width: 85vw;
+    width: 100vw;
     height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid;
 }
 #sidebar{
     border: 1px solid;
-    width: 10vw;
+    width: 8vw;
     height: 100vh;
     display: block;
 }
@@ -33,13 +34,16 @@ h3, .mg{
 }
 #logo{
     background-color: rgb(91, 47, 105);
-    width: 10vw;
+    width: 8vw;
     height: 8vh;
+    border: 1px solid;
+    align-items: center;
 }
 #mode{
     background-color: rgb(117, 19, 150);
     width: 5vw;
     height: 8vh;
+    border: 1px solid;
 }
 #slideshow-1{
     background-color: rgb(189, 94, 240);
@@ -50,6 +54,7 @@ h3, .mg{
     border-radius: 20%;
     justify-content: center;
     margin: 2%;
+    border: 1px solid;
 }
 #slideshow-2{
     background-color: rgb(189, 94, 240);
@@ -60,6 +65,7 @@ h3, .mg{
     border-radius: 20%;
     justify-content: center;
     margin: 2%;
+    border: 1px solid;
 }
 #slideshow-3{
     background-color: rgb(189, 94, 240);
@@ -70,9 +76,10 @@ h3, .mg{
     border-radius: 20%;
     justify-content: center;
     margin: 2%;
+    border: 1px solid;
 }
 #slides{
-    border: 2px solid black;
+    border: 2px solid;
     display: flex;
     width: 50vw;
     height: 50vh;
