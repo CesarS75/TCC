@@ -1,6 +1,7 @@
 body{
     max-width: 100vw;
     max-height: 100vh;
+    background-color: #F1E3E4;
 }
 header{
     width: 100vw;
@@ -8,13 +9,12 @@ header{
     display: flex;
 }
 nav{
-    background-color: rgb(197, 117, 217);
     width: 100vw;
     height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
+
 }
 #sidebar{
     border: 1px solid;
@@ -27,10 +27,18 @@ a{
 }
 h3, .mg{
     margin-right: 2vw;
-    color: black;
+    color: #50514f;
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+#title{
+    width: 50vw;
+    height: 50vh;
+}
+h1{
+    width: auto;
+    height: 10vh;
 }
 #logo{
     background-color: rgb(91, 47, 105);
@@ -46,7 +54,7 @@ h3, .mg{
     border: 1px solid;
 }
 #slideshow-1{
-    background-color: rgb(189, 94, 240);
+    background-color: #966A9C;
     display: flex;
     width: 40vw;
     height: 25vh;
@@ -57,7 +65,7 @@ h3, .mg{
     border: 1px solid;
 }
 #slideshow-2{
-    background-color: rgb(189, 94, 240);
+    background-color: #966A9C;
     display: flex;
     width: 40vw;
     height: 25vh;
@@ -68,7 +76,7 @@ h3, .mg{
     border: 1px solid;
 }
 #slideshow-3{
-    background-color: rgb(189, 94, 240);
+    background-color: #966A9C;
     display: flex;
     width: 40vw;
     height: 25vh;
