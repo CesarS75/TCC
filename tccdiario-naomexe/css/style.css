@@ -33,16 +33,21 @@ h3, .mg{
     font-style: normal;
 }
 
-/*#title{
+#title{
     width: 40vw;
-    height: 50vh;
-    display: flexbox;
-    flex-direction: row;
+    height:auto;
+    display: flex;
+
 }
-h1{
+
+h2{
     width: auto;
     height: 10vh;
-}*/
+    color:#50514f;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 #logo{
     background-color: rgb(91, 47, 105);
@@ -61,46 +66,47 @@ h1{
     background-color: #966A9C;
     display: flex;
     width: 40vw;
-    height: 25vh;
+    height: 40vh;
     text-decoration: none;
     border-radius: 20%;
     justify-content: center;
     margin: 2%;
-    border: 1px solid;
+    box-shadow: 5px 3px 7px #50514f;
 }
 #slideshow-2{
     background-color: #966A9C;
     display: flex;
     width: 40vw;
-    height: 25vh;
+    height: 40vh;
     text-decoration: none;
     border-radius: 20%;
     justify-content: center;
     margin: 2%;
-    border: 1px solid;
+    box-shadow: 5px 3px 7px #50514f;
 }
 #slideshow-3{
     background-color: #966A9C;
     display: flex;
     width: 40vw;
-    height: 25vh;
+    height: 40vh;
     text-decoration: none;
     border-radius: 20%;
     justify-content: center;
     margin: 2%;
-    border: 1px solid;
+    box-shadow: 5px 3px 7px #50514f;
 }
 #slides{
-    border: 2px solid;
     display: flex;
-    width: 50vw;
-    height: 50vh;
-    align-items: center;
+    width: 70vw;
+    height: 80vh;
+    align-items: flex-start;
 }
 #container_slides{
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-rows: 10vh, 80vh;
+    -ms-grid-row-align: end;
     justify-content: space-evenly;
     align-items: center;
 }
