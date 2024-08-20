@@ -1,0 +1,112 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+header img {
+    margin: 5px 40px;
+    width: 45px;
+    height: 45px;
+}
+header #botao {
+    border: 0;
+    cursor: pointer;
+    background: 0;
+}
+header #botao:hover,
+header img:hover {
+    transform: scale(1.10);
+}
+body {
+    background-image: url(../icons/imagens/rayquaza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 80%;
+    margin: auto auto;
+}
+body.darkMode {
+    background-image: url(../icons/imagens/wallpaperdark.png);
+    color: white;
+}
+main {
+    padding: 25px;
+}
+main .listaPokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+main .pokemoncard {
+    display: flex;
+    gap: 15px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: rgb(240, 199, 199);
+    transition: 0.1s ease-in-out ;
+    padding: 15px;
+}
+main .pokemoncard .pokemonimg {
+    width: 75px;
+    height: 75px;
+}
+.darkMode .pokemoncard{
+    background-color: rgb(46, 51, 49);
+}
+
+.darkMode .pokemoncard:hover {
+    background-color: rgb(60, 84, 190)
+}
+main .pokemoncard:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.2s ease-in-out ;
+    background-color: rgb(167, 91, 103);
+}
+.info {
+    border-radius: 10px;
+    padding: 2px;
+    border: 2px rgb(32, 25, 25) solid;
+}
+main .pokemoncard .types {
+    gap: 15px;
+    display: flex;
+    list-style: none;
+}
+
+main .desc {
+    max-height: 60px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.grama {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(91, 206, 91);
+}
+.veneno {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(201, 88, 201);
+}
+.fogo {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(184, 78, 78);
+}
+.agua {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(62, 235, 177);
+}
