@@ -12,6 +12,7 @@ header{
     width: 100vw;
     height: 8vh;
     display: flex;
+    position: fixed;
 }
 nav{
     width: 100vw;
@@ -22,12 +23,13 @@ nav{
 
 }
 #sidebar{
-    width: 8vw;
+    width: 6vw;
     height: 100vh;
     display: block;
     position: fixed;
-    background-color: #4f5d75;
-    background-image:  linear-gradient( to right, #464c67, transparent, #464c67)
+    background-color: #415577;
+    background-image:  linear-gradient( to right, #464c67, transparent, #464c67);
+    box-shadow: 5px 5px 5px #50514f;
 }
 a{
     text-decoration: none;
@@ -41,6 +43,7 @@ h3, .mg{
 }
 
 #title{
+    margin-top: 20vh;
     width: 40vw;
     height:auto;
     display: flex;
@@ -57,9 +60,8 @@ h2{
 }
 
 #logo{
-    width: 8vw;
+    width: 6vw;
     height: 8vh;
-    align-items: stretch;
 }
 #mode{
     width: 50px;
@@ -80,18 +82,18 @@ h2{
 }
 #slideshow-1:hover {
     transform: scale(1.06);
-    cursor:grab;
+    cursor:default;
     transition: 0.25s ease-in-out;
 }
 #slideshow-2:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: 0.6s ease-in-out;
+    transform: scale(1.06);
+    cursor:default;
+    transition: 0.25s ease-in-out;
 }
 #slideshow-3:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: 600ms ease-in-out;
+    transform: scale(1.06);
+    cursor: default;
+    transition: 0.25s ease-in-out;
 }
 #slideshow-2{
     background-color: #464c67;
