@@ -30,6 +30,7 @@ nav{
     background-color: #415577;
     background-image:  linear-gradient( to right, #464c67, transparent, #464c67);
     box-shadow: 5px 5px 5px #50514f;
+    border-radius: 0px 10px 10px 0px;
 }
 a{
     text-decoration: none;
@@ -42,6 +43,20 @@ h3, .mg{
     font-style: normal;
 }
 
+h4{
+    color: #4f5d75;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer{
+    width: auto;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #title{
     margin-top: 20vh;
     width: 40vw;
