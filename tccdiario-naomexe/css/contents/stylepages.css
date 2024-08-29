@@ -27,6 +27,19 @@ body{
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
+*::-webkit-scrollbar {
+    width: 10px;
+    margin-bottom: 0%;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bg-slide-color);
+    border-radius: 10px;
+    border: 3px solid var(--texts);
+}
 button{
     padding:0%;
     background-color: transparent;
@@ -91,14 +104,14 @@ footer{
     display: flex;
     align-items: flex-end;
 }
-
 h2{
     width: auto;
-    height: 10vh;
-    color:var(--font-color);
+    height: 5vh;
+    color:var(--texts);
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: medium;
 }
 #logo{
     width: 80px;
@@ -136,9 +149,22 @@ h2{
 }
 #conteudo{
     background-color: var(--bg-slide-color);
-    display: flex;
-    width: 70vw;
-    height: 80vh;
-    align-items: flex-start;
+    display: block;
+    max-width: 70vw;
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+    justify-content: center;
     border-radius: 20px;
+}
+.questions{
+    width: 60vw;
+    height: auto;
+    margin: 30px;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
