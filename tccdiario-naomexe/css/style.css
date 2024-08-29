@@ -29,9 +29,15 @@ body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
 button{
+    padding:0%;
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+button:hover{
+    transform: scale(0.8);
+    cursor:default;
+    transition: 0.25s ease-in-out;
 }
 header{
     width: 100vw;

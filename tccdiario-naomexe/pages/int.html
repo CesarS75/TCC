@@ -4,32 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
+    <title>introducao</title>
+    <!--link css-->
+    <link rel="stylesheet" href="../css/contents/stylepages.css">
+    <!--fonte bungee-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--fonte montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="" alt="logo">
-        </div>
+        <nav id="sidebar">
+          <div id="logo">
+            <img src="../images/logo.png" alt="logo">
+          </div>
+          <div class="side">
+            <a class="navside" href ="pages/slides/navbar.html">navbar</a>
+            <a class="navside" href ="pages/slides/sidebar.html">sidebar</a>
+            <a class="navside" href ="pages/slides/footer.html">footer</a>
+            <a class="navside" href ="pages/slides/header.html">header</a>
+            <a class="navside" href ="pages/slides/login.html">login</a>
+            <a class="navside" href ="pages/slides/forms.html">forms</a>
+          </div>
+        </nav>  
         <nav id="pages">
-            <a href="int.html">
-                <h3>
-                    Introdução
-                </h3>
-            </a>
-            <a href="teste.html">
-                <h3>
-                    Teste
-                </h3>
-            </a>
-            <a href="sobre.html">
-                <h3>
-                    Sobre
-                </h3>
-            </a>
+          <a href="pages/int.html">
+            <h3 class="mg">
+                  Introdução
+            </h3>
+          </a>
+          <a href="pages/teste.html">
+            <h3 class="mg">
+                  Teste
+            </h3>
+          </a>
+          <a href="pages/sobre.html">
+            <h3>
+                  Sobre
+            </h3>
+          </a>
         </nav>
         <div id="mode">
-            <img src="" alt="darkmode">
+          <!--botão para fazer a troca de estados dark/light-->
+          <button id="toggle" class="button">
+            <img src="../images/sun.png" alt="mode">
+          </button>
         </div>
+    </header>
+    <div class="centraliza">
+        <container id="conteudo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Etiam eget ligula eu lectus lobortis condimentum. 
+             Aliquam nonummy auctor massa.
+             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+             Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+             Nam mattis, felis ut adipiscing.
+            </p>
+        </container>
+    </div> 
+    <script src="../js"></script>
 </body>
 </html>
