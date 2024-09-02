@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Admin</title>
 </head>
 <body>
     <header>
         <div id="logo">
-            <img src="" alt="logo">
+            <img src="../images/logo.png" alt="logo">
         </div>
         <nav id="pages">
-            <a href="int.html">
+            <a href="./int.html">
                 <h3>
                     Introdução
                 </h3>
             </a>
-            <a href="#">
+            <a href="./admin.html">
                 <h3>
                     Admin
                 </h3>
             </a>
-            <a href="sobre.html">
+            <a href="./sobre.html">
                 <h3>
                     Sobre
                 </h3>
             </a>
         </nav>
         <div id="mode">
-            <img src="" alt="darkmode">
-        </div>
+            <!--botão para fazer a troca de estados dark/light-->
+            <button id="toggle" class="button">
+              <img src="../images/sun.png" alt="mode">
+            </button>
+          </div>
+    </header> 
+    <script src="../js/mode.js"></script>
 </body>
 </html>
