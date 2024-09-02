@@ -1,4 +1,6 @@
-
+html {
+    font-size: 16px;
+}
 body{
     --box-shadow: #50514f;
     /*ligth mode colors*/
@@ -54,8 +56,11 @@ nav{
 
 }
 #sidebar{
-    width: 80px;
+    font-size: 8rem;
+    width: 6vw;
+    max-width: 8vw;
     height: 100vh;
+    justify-content: center;
     display: block;
     position: fixed;
     background-color: var(--bg-slide-color);
@@ -103,11 +108,9 @@ h2{
 }
 
 #logo{
-    width: 80px;
-    height: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    border: 4px black solid;
 }
 #mode{
     width: 50px;
@@ -137,6 +140,7 @@ h2{
     justify-content: center;
     margin: 2%;
     box-shadow: 5px 3px 7px var(--box-shadow);
+    overflow-wrap: anywhere;
 }
 #slideshow-3{
     background-color: var(--bg-slide-color);
@@ -195,10 +199,10 @@ h2{
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: small;
+    font-size: 1vw;
 }
 .side{
     display: grid;
     justify-content: space-around;
-    padding-top: 20px;
+    padding-top: 0.4rem;
 }
