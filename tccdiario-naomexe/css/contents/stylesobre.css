@@ -149,11 +149,14 @@ h2{
 }
 #conteudo{
     background-color: var(--bg-slide-color);
-    display: flex;
-    max-width: 70vw;
-    max-height: 80vh;
+    display: block;
+    width: 40vw;
+    max-height: 70vh;
     overflow-y: scroll;
     padding-right: 10px;
     justify-content: center;
     border-radius: 20px;
+}
+.devs{
+    margin: 20px;
 }
