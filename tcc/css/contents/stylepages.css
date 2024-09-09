@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+}
+html {
+    font-size: 16px;
+}
+body {
+    width: 99vw;
+    height: 99vh;
+    background-color: antiquewhite;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.categorias {
+    display: flex;
+}
+.categorias p {
+    margin-right: 6rem;
+    border: 4px black solid;
+}

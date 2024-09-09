@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbars</title>
+    <title>Navbars</title>
     <link rel="stylesheet" href="../../css/contents/stylepages.css">
     <!--fonte bungee-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav id="sidebar">
-          <a href="../../index.html">
-            <div id="logo">
+      <nav id="navbar">
+          <div id="logo">
+            <a href="../../index.html">
               <img src="../../images/logo.png" alt="logo">
-            </div>
+            </a>
+          </div>
+        <div class="categorias">
+          <a href="../int.html">
+            <p>Introdução</p>
           </a>
+          <a href="../sobre.html">
+            <p>Sobre</p>
+          </a>
+        </div>
+        <div id="mode">
+          <!--botão para fazer a troca de estados dark/light-->
+          <button id="toggle" class="button">
+            <img src="/images/sun.png" alt="mode">
+          </button>
+        </div>
+      </nav>
+
+      <section id="sidebar">
             <div class="side">
               <a class="navside" href ="./navbar.html">navbars</a>
               <a class="navside" href ="./sidebar.html">sidebars</a>
@@ -37,30 +53,6 @@
               <a class="navside" href ="./dropdown.html">dpdowns</a>
               <a class="navside" href ="./pgbars.html">pgbars</a>
             </div>
-        </nav>  
-        <nav id="pages">
-          <a href="../int.html">
-            <h3 class="mg">
-                  Introdução
-            </h3>
-          </a>
-          <a href="../admin.html">
-            <h3 class="mg">
-                  Admin
-            </h3>
-          </a>
-          <a href="../sobre.html">
-            <h3>
-                  Sobre
-            </h3>
-          </a>
-      </nav>
-      <div id="mode">
-        <!--botão para fazer a troca de estados dark/light-->
-        <button id="toggle" class="button">
-          <img src="/images/sun.png" alt="mode">
-        </button>
-      </div>
-    </header>
+      </section>  
 </body>
 </html>
