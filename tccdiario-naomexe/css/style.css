@@ -125,7 +125,6 @@ h2{
     justify-content: center;
     margin: 2%;
     box-shadow: 5px 3px 7px var(--box-shadow);
-    
 }
 #slideshow-2{
     background-color: var(--bg-slide-color);
