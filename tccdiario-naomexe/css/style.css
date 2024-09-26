@@ -55,9 +55,12 @@ nav{
 }
 #sidebar{
     width: 80px;
-    height: 100vh;
-    display: block;
+    height: 70vh;
+    display: flex;
+    align-items: center;
     position: fixed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: var(--bg-slide-color);
 }
 a{
@@ -199,7 +202,8 @@ h2{
 .side{
     display: grid;
     justify-content: space-around;
-    padding-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 .resuminho{
     margin: 20px;
@@ -231,4 +235,10 @@ h2{
     background-color: var(--bg-slide-color);
     border-radius: 10px;
     border: 3px solid var(--texts);
+}
+#side{
+    width: auto;
+    height: 100vh;
+    display:flex;
+    align-items: center;
 }
