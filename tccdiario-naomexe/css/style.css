@@ -1,7 +1,15 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+}
+html {
+    font-size: 16px;
+}
 body{
     --box-shadow: #50514f;
-    /*ligth mode colors*/
+    /*light mode colors*/
     --bg-body: white;
     --bg-gradient: linear-gradient( to right, #b1b695, transparent, #b1b695);
     --bg-slide-color: #464c67;
@@ -14,6 +22,11 @@ body{
     margin: auto;
     background-color: var(--bg-body);
     background-image:  var(--bg-gradient);
+}
+main {
+    display: flex;
+    width: 99.9vw;
+    max-height: 100vh;
 }
 .dark{
     --box-shadow:#30415F;
@@ -43,29 +56,58 @@ header{
     width: 100vw;
     height: 8vh;
     display: flex;
-    position: fixed;
 }
 nav{
-    width: 100vw;
-    height: 8vh;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    width: 97vw;
+    max-width: 100vw;
+    font-family: "Bungee", sans-serif;
+    background-color: var(--bg-slide-color);
+    height: fit-content;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
 }
+.categorias {
+    display: flex;
+}
+.categorias p {
+    font-size: 1rem;
+    margin-right: 1.8rem;
+}
 #sidebar{
-    width: 80px;
-    height: 70vh;
+    width: fit-content;
+    height: 80vh;
     display: flex;
     align-items: center;
-    position: fixed;
+}
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Bungee", sans-serif;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.1rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: var(--bg-slide-color);
 }
-a{
-    text-decoration: none;
+.navside{
+    padding: 0.5rem;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    font-size: 0.9rem;
+    color:var(--font-color);
 }
+
+a:link, a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
 h3, .mg{
     margin-right: 2vw;
     color: var(--font-color);
@@ -89,7 +131,7 @@ footer{
     justify-content: center;
 }
 #title{
-    margin-top: 20vh;
+    margin-top: 10vh;
     width: 40vw;
     height:auto;
     display: flex;
@@ -174,7 +216,7 @@ h2{
 }
 #container_slides{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-rows: 10vh, 80vh;
     -ms-grid-row-align: end;
@@ -189,21 +231,6 @@ h2{
     font-weight: 500;
     font-style: normal;
     font-size: larger;
-}
-.navside{
-    margin-top: 15px;
-    text-decoration: none;
-    color: var(--texts);
-    font-family: "Bungee", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: small;
-}
-.side{
-    display: grid;
-    justify-content: space-around;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 .resuminho{
     margin: 20px;

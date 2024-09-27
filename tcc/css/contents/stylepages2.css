@@ -74,8 +74,6 @@ button{
     align-items: center;
 }
 .side{
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     color: #DFDEE3;
     text-decoration: none;
     display: flex;
