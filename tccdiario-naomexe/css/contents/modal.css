@@ -1,0 +1,123 @@
+.modal-container,
+.modal-container2,
+.modal-container3,
+.modal-container4,
+.modal-container5 {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s;
+}
+.modal-container-show,
+.modal-container-show2,
+.modal-container-show3,
+.modal-container-show4,
+.modal-container-show5 {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal,
+.modal2,
+.modal3,
+.modal4,
+.modal5 {
+    border: #30415F 1rem solid;
+    background-color: #fff;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+.modalpt1,
+.modalpt12,
+.modalpt13,
+.modalpt14,
+.modalpt15 {
+    max-width: 50%;
+    max-height: 100%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: black 2px solid;
+}
+.modalpt1 img,
+.modalpt12 img,
+.modalpt13 img,
+.modalpt14 img,
+.modalpt15 img {
+    width: 95%;
+    border: 4px #30415F solid;
+    margin-right: 1rem;
+}
+.modalpt2,
+.modalpt22,
+.modalpt23,
+.modalpt24,
+.modalpt25 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.close {
+    font-family: "Bungee", sans-serif;
+    background-color: var(--res);
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    border-radius: 2rem;
+}
+.close-btn,
+.close-btn2,
+.close-btn3,
+.close-btn4,
+.close-btn5 {
+    padding: 0.5rem;
+}
+.codHtml,
+.codHtml2,
+.codHtml3,
+.codHtml4,
+.codHtml5 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.codHtml img,
+.codHtml2 img,
+.codHtml3 img,
+.codHtml4 img,
+.codHtml5 img {
+    height: 90%;
+    width: 98%;
+}
+.codCss,
+.codCss2,
+.codCss3,
+.codCss4,
+.codCss5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: black 2px solid;
+    height: 50%;
+}
+#codigoHtml {
+    opacity: 0;
+    pointer-events: none;
+}
+#codigoCss {
+    opacity: 0;
+    pointer-events: none;
+}
