@@ -113,7 +113,8 @@
     border-top: black 2px solid;
     height: 50%;
 }
-#codigoHtml {
+#codigoHtml,
+#codigoHtml2 {
     opacity: 0;
     pointer-events: none;
 }
