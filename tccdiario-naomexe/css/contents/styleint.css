@@ -60,23 +60,35 @@ header{
     display: flex;
     position: fixed;
 }
-nav{
-    width: 100vw;
-    height: 8vh;
+#sidebar{
+    width: fit-content;
+    height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-
 }
-#sidebar{
-    width: 80px;
-    height: 100vh;
-    display: block;
-    position: fixed;
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Bungee", sans-serif;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     background-color: var(--bg-slide-color);
 }
-a{
+.navside{
+    padding: 0.5rem;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    font-size: 0.9rem;
+    color:var(--font-color);
+}
+
+a:link, a {
     text-decoration: none;
+    color: var(--font-color);
 }
 h3, .mg{
     margin-right: 2vw;
