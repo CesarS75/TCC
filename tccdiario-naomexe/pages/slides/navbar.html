@@ -79,12 +79,56 @@
                 <img src="../../images/teste.png" alt="fotinha de teste">
               </div>
               <div class="modalpt2">
+                  <!--PARTE DO MODAL Q É DO CODIGOHTML-->
                   <div class="codHtml">
-                    <pre><code>'p'</code></pre>
-                    <p id="codigoHtml">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis eligendi voluptas eveniet</p>
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <div class="slide s1">
+                            <img src="../../images/cssteste4.jfif" alt="teste">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/cssteste5.jfif" alt="teste">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/cssteste1.png" alt="teste">
+                      </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1"></label>
+                          <label class="bar" for="slide2"></label>
+                          <label class="bar" for="slide3"></label>
+                      </div>
+                      </div>
+                    </section>
+<!--CODIGO HTML-->
+                    <p id="codigoHtml" hidden><code>
+                      cavalao
+                      <!DOCTYPE html>
+                        <html lang="PT-BR">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Navbars</title>
+                            <link rel="stylesheet" href="../../css/contents/stylepages.css">
+                            <link rel="stylesheet" href="../../css/contents/modal.css">
+                            <!--fonte bungee-->
+                            <link rel="preconnect" href="https://fonts.googleapis.com">
+                            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+                            <!--fonte montserrat-->
+                            <link rel="preconnect" href="https://fonts.googleapis.com">
+                            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                        </head>
+                    </code>cavalao</p>
                     <button onclick="copiarTextoHtml()">Copiar</button>
                   </div>
+                  <!--PARTE DO MODAL Q É DO CODIGOCSS-->
                   <div class="codCss">
+                      <!--CODIGO CSS-->
                       <p id="codigoCss">uauauau</p>
                       <button onclick="copiarTextoCss()">Copiar</button>
                   </div>
