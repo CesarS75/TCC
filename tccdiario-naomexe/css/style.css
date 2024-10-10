@@ -125,13 +125,6 @@ h4{
     font-style: normal;
 }
 
-footer{
-    width: auto;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #title{
     margin-top: 10vh;
     width: 40vw;
@@ -271,4 +264,20 @@ h2{
     height: 100vh;
     display:flex;
     align-items: center;
+}
+
+footer {
+    font-family: "Bungee", sans-serif;
+    margin-top: 10rem;
+    background-color: #222F44;
+    width: 100vw;
+    height: 5.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-right: 0.9rem;
+    margin-left: 0.9rem;
 }

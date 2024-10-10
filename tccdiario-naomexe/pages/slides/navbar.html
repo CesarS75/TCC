@@ -43,18 +43,15 @@
     <main>
     <article id="sidebar">
             <div class="side">
-              <a class="navside" href ="./navbar.html">navbars</a>
-              <a class="navside" href ="./sidebar.html">sidebars</a>
-              <a class="navside" href ="./footer.html">footers</a>
-              <a class="navside" href ="./header.html">headers</a>
-              <a class="navside" href ="./modals.html">modals</a>
-              <a class="navside" href ="./forms.html">forms</a>
-              <a class="navside" href ="./alerts.html">alerts</a>
-              <a class="navside" href ="./button.html">buttons</a>
-              <a class="navside" href ="./card.html">cards</a>
-              <a class="navside" href ="./carousel.html">carousel</a>
-              <a class="navside" href ="./dropdown.html">dpdowns</a>
-              <a class="navside" href ="./pgbars.html">pgbars</a>
+              <a class="navside" href ="./pages/slides/navbar.html">navbars</a>
+              <a class="navside" href ="/pages/slides/sidebar.html">sidebars</a>
+              <a class="navside" href ="/pages/slides/footer.html">footers</a>
+              <a class="navside" href ="/pages/slides/modals.html">modals</a>
+              <a class="navside" href ="/pages/slides/forms.html">forms</a>
+              <a class="navside" href ="/pages/slides/alerts.html">alerts</a>
+              <a class="navside" href ="/pages/slides/button.html">buttons</a>
+              <a class="navside" href ="/pages/slides/card.html">cards</a>
+              <a class="navside" href ="/pages/slides/pgbars.html">pgbars</a>
             </div>
       </article>
       <section class="cards">
@@ -63,7 +60,7 @@
               <strong>
               <p class="title">Navbar1</p>
               </strong>
-              <img src="../../images/teste.png" alt="Fotinho de um exemplo de navbar">
+              <img src="" alt="Fotinho de um exemplo de navbar">
               <div class="descricao">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi veniam perferendis vero odio earum</p>
                 <button class="open-modal-button">
@@ -76,7 +73,7 @@
             <div class="modal">
               <div class="close"><button class="close-btn" onclick="closeModal()">Close</button></div>
               <div class="modalpt1">
-                <img src="../../images/teste.png" alt="fotinha de teste">
+                <img src="" alt="fotinha de teste">
               </div>
               <div class="modalpt2">
                   <!--PARTE DO MODAL Q É DO CODIGOHTML-->
@@ -85,51 +82,98 @@
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1" checked>
                         <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
                         <div class="slide s1">
-                            <img src="../../images/cssteste4.jfif" alt="teste">
+                            <img src="../../images/navbar1html1.png" alt="teste">
                         </div>
                         <div class="slide">
-                            <img src="../../images/cssteste5.jfif" alt="teste">
+                            <img src="../../images/navbar1html2.png" alt="teste">
                         </div>
-                        <div class="slide">
-                          <img src="../../images/cssteste1.png" alt="teste">
-                      </div>
                         <div class="navigation">
                           <label class="bar" for="slide1"></label>
                           <label class="bar" for="slide2"></label>
-                          <label class="bar" for="slide3"></label>
                       </div>
                       </div>
                     </section>
 <!--CODIGO HTML-->
-                    <p id="codigoHtml" hidden><code>
-                      cavalao
-                      <!DOCTYPE html>
-                        <html lang="PT-BR">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title>Navbars</title>
-                            <link rel="stylesheet" href="../../css/contents/stylepages.css">
-                            <link rel="stylesheet" href="../../css/contents/modal.css">
-                            <!--fonte bungee-->
-                            <link rel="preconnect" href="https://fonts.googleapis.com">
-                            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                            <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-                            <!--fonte montserrat-->
-                            <link rel="preconnect" href="https://fonts.googleapis.com">
-                            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                            <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-                        </head>
-                    </code>cavalao</p>
+                    <p id="codigoHtml" hidden>
+                      <!-- <!DOCTYPE html>
+                      <html lang="en" >
+                      <head>
+                        <meta charset="UTF-8">
+                        <title>CodePen - Bootstrap Navbar Change Active Class Link</title>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+                      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+                      </head>
+                      <body>
+                      partial:index.partial.html
+                      <div id="topheader">
+                        <nav class="navbar navbar-default">
+                          <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Brand</a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                  <li class="active"><a href="#home">home<span class="sr-only">(current)</span></a></li>
+                                  <li><a href="#page1">page 1</a></li>
+                                  <li><a href="#page2">page 2</a></li>
+                                  <li><a href="#page3">page 3</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a href="#">Link</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      partial
+                          <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+                        <script>$( '#topheader .navbar-nav a' ).on( 'click', function () {
+                            $( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+                            $( this ).parent( 'li' ).addClass( 'active' );
+                      });</script>
+                      </body>
+                      </html>
+                      -->
+                    </p>
                     <button onclick="copiarTextoHtml()">Copiar</button>
                   </div>
                   <!--PARTE DO MODAL Q É DO CODIGOCSS-->
                   <div class="codCss">
-                      <!--CODIGO CSS-->
-                      <p id="codigoCss">uauauau</p>
+                    <section class="content">
+                      <div class="slides">
+                        <div class="slide">
+                            <img src="../../images/navbar1css1.png" alt="teste">
+                        </div>
+                      </div>
+                    </section>
+<!--CODIGO CSS-->
+                      <p id="codigoCss" hidden>
+                        <!--
+                        #topheader .navbar-nav li > a {
+                        text-transform: capitalize;
+                        color: #333;
+                        transition: background-color 0.2s, color 0.2s;
+                      }
+                      #topheader .navbar-nav li > a:hover, #topheader .navbar-nav li > a:focus {
+                        background-color: #333;
+                        color: #fff;
+                      }
+
+                      #topheader .navbar-nav li.active > a {
+                        background-color: #333;
+                        color: #fff;
+                      }
+                        -->
+                      </p>
                       <button onclick="copiarTextoCss()">Copiar</button>
                   </div>
               </div>
@@ -157,12 +201,48 @@
             </div>
             <div class="modalpt22">
                 <div class="codHtml">
-                  <img src="../../images/paleta.png" alt="">
-                  <p id="codigoHtml2">Lorem ipshmmmmmm</p>
+                  <section class="content">
+                    <div class="slides">
+                      <input type="radio" name="slide" id="slide12" checked>
+                      <input type="radio" name="slide" id="slide21">
+                      <div class="slide s2">
+                          <img src="../../images/navbar2html1.png" alt="teste">
+                      </div>
+                      <div class="slide">
+                          <img src="../../images/navbar2html2.png" alt="teste">
+                      </div>
+                      <div class="navigation">
+                        <label class="bar" for="slide12"></label>
+                        <label class="bar" for="slide21"></label>
+                    </div>
+                    </div>
+                  </section>
+                  <div id="codigoHtml2" hidden>dlsaopfacsoidj</div>
                   <button onclick="copiarTextoHtml2()">Copiar</button>
                 </div>
                 <div class="codCss">
-                    <p id="codigoCss2">dkasodkaso</p>
+                  <section class="content">
+                    <div class="slides">
+                      <input type="radio" name="slide" id="slide12" checked>
+                      <input type="radio" name="slide" id="slide22">
+                      <input type="radio" name="slide" id="slide32">
+                      <div class="slide s2">
+                          <img src="../../images/navbar2css1.png" alt="teste">
+                      </div>
+                      <div class="slide">
+                        <img src="../../images/navbar2css2.png" alt="teste">
+                      </div>
+                      <div class="slide">
+                        <img src="../../images/navbar2css3.png" alt="teste">
+                      </div>
+                      <div class="navigation">
+                        <label class="bar" for="slide12"></label>
+                        <label class="bar" for="slide22"></label>
+                        <label class="bar" for="slide32"></label>
+                    </div>
+                    </div>
+                  </section>
+                    <p id="codigoCss2" hidden>dkasodkaso</p>
                     <button onclick="copiarTextoCss2()">Copiar</button>
                 </div>
             </div>
@@ -185,8 +265,7 @@
         </section>
     </main>
     <footer>
-      <p> &copy ETEC 2024 <a href="#"> ADMIN
-      </a></p>
+      <p> &copy ETEC 2024</p>
       <p>Contato: @csslibraryetec@gmail.com</p>
     </footer>
     <script src="../../js/copy.js"></script>

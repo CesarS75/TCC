@@ -197,5 +197,6 @@ p{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: var(--res)
+    color: var(--res);
+    padding: 0.5rem;
 }

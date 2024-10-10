@@ -52,7 +52,7 @@ body {
 .modal4,
 .modal5 {
     border: #30415F 1rem solid;
-    background-color: #fff;
+    background-color: var(--bg-slide-color);
     width: 90vw;
     height: 80vh;
     border-radius: 3rem;
@@ -122,7 +122,7 @@ body {
 .codHtml3 img,
 .codHtml4 img,
 .codHtml5 img {
-    height: 90%;
+    height: 10%;
     width: 98%;
 }
 .codCss,
@@ -173,13 +173,13 @@ body {
     height: 100%;
 }
 
-#slide1:checked ~ .s1{
+#slide1:checked ~ .s1, #slide12:checked ~ .s2{
     margin-left: 0;
 }
-#slide2:checked ~ .s1{
+#slide2:checked ~.s1 ,#slide21:checked ~ .s2, #slide22:checked ~ .s2{
     margin-left: -20%;
 }
-#slide3:checked ~ .s1{
+#slide32:checked ~ .s2 {
     margin-left: -40%;
 }
 
