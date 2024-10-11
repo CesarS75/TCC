@@ -1,4 +1,4 @@
-/* Função pra copiar texto HTML (1 a 6) */
+/* Função pra copiar texto HTML (1 a 4) */
 function copiarTextoHtml(){
     var conteudo = document.getElementById('codigoHtml').innerHTML;
 
@@ -23,19 +23,8 @@ function copiarTextoHtml4(){
     navigator.clipboard.writeText(conteudo);
     console.log("o texto copiado foi:"+ conteudo)
 }
-function copiarTextoHtml5(){
-    var conteudo = document.getElementById('codigoHtml5').innerHTML;
 
-    navigator.clipboard.writeText(conteudo);
-    console.log("o texto copiado foi:"+ conteudo)
-}
-function copiarTextoHtml6(){
-    var conteudo = document.getElementById('codigoHtml6').innerHTML;
-
-    navigator.clipboard.writeText(conteudo);
-    console.log("o texto copiado foi:"+ conteudo)
-}
-/* agora é função pra copiar texto CSS (1 a 6) */
+/* agora é função pra copiar texto CSS (1 a 4) */
 function copiarTextoCss(){
     var conteudo = document.getElementById('codigoCss').innerHTML;
 
@@ -56,18 +45,6 @@ function copiarTextoCss3(){
 }
 function copiarTextoCss4(){
     var conteudo = document.getElementById('codigoCss4').innerHTML;
-
-    navigator.clipboard.writeText(conteudo);
-    console.log("o texto copiado foi:" + conteudo)
-}
-function copiarTextoCss5(){
-    var conteudo = document.getElementById('codigoCss5').innerHTML;
-
-    navigator.clipboard.writeText(conteudo);
-    console.log("o texto copiado foi:" + conteudo)
-}
-function copiarTextoCss6(){
-    var conteudo = document.getElementById('codigoCss6').innerHTML;
 
     navigator.clipboard.writeText(conteudo);
     console.log("o texto copiado foi:" + conteudo)

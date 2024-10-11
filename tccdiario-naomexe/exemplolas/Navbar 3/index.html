@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Navbar</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
-
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <nav class="navbar">
   <div class="container">
-
     <div class="navbar-header">
       <button class="navbar-toggler" data-toggle="open-navbar1">
         <span></span>
@@ -21,7 +20,6 @@
         <h4>Awesome<span>logo</span></h4>
       </a>
     </div>
-
     <div class="navbar-menu" id="open-navbar1">
       <ul class="navbar-nav">
         <li class="active"><a href="#">Home</a></li>
@@ -85,19 +83,15 @@
         dropdowns.forEach((dropdownButton) => {
           let dropdown = document.querySelector(`#${dropdownButton.dataset.dropdown}`)
           let targetIsDropdown = dropdown == event.target
-    
           if (dropdownButton == event.target) {
             return
           }
-    
           if ((!targetIsDropdown) && (!dropdown.contains(event.target))) {
             dropdown.classList.remove('show')
           }
         })
       }
     })
-    
     handleSmallScreens()</script>
-
 </body>
 </html>

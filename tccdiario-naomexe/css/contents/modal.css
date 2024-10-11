@@ -172,16 +172,33 @@ body {
     width: 100%;
     height: 100%;
 }
-
-#slide1:checked ~ .s1, #slide12:checked ~ .s2{
+/* Navbar */
+#slide1:checked ~ .s1, #slide12:checked ~ .s2, #slide13 ~ .s3{
     margin-left: 0;
 }
-#slide2:checked ~.s1 ,#slide21:checked ~ .s2, #slide22:checked ~ .s2{
+#slide2:checked ~.s1 ,#slide21:checked ~ .s2, #slide22:checked ~ .s2, #slide23:checked ~ .s3, #slide24:checked ~ .s3{
     margin-left: -20%;
 }
-#slide32:checked ~ .s2 {
+#slide31:checked ~ .s2, #slide32:checked ~ .s3,#slide33:checked ~ .s3{
     margin-left: -40%;
 }
+#slide41:checked ~ .s3, #slide42:checked ~ .s3 {
+    margin-left: -60%
+}
+#slide51:checked ~ .s3 {
+    margin-left: -80%;
+}
+#slide61:checked ~ .s3 {
+    margin-left: -100%;
+}
+/* Categoria 2 (slideX_2) */
+/* Categoria 3 (slideX_3) */
+/* Categoria 4 (slideX_4) */
+/* Categoria 5 (slideX_5) */
+/* Categoria 6 (slideX_6) */
+/* Categoria 7 (slideX_7) */
+/* Categoria 8 (slideX_8) */
+/* Categoria 9 (slideX_9) */
 
 .navigation {
     position: fixed;
