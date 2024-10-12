@@ -109,7 +109,16 @@ a:link, a {
     text-decoration: none;
     color: var(--font-color);
 }
-
+a:visited {
+    color:var(--font-color);
+}
+a:hover {
+    transition: 0.2s;
+    color: #4f5d75;
+}
+a:active {
+    color: #38404e;
+}
 h3, .mg{
     margin-right: 2vw;
     color: var(--font-color);

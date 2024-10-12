@@ -4,8 +4,9 @@ body {
     --bg-body: white;
     --bg-gradient: linear-gradient( to right, #b1b695, transparent, #b1b695);
     --bg-slide-color: #464c67;
+    --bg-slide-color2: #5b6281;
     /*font colors ligth*/
-    --font-color: #4f5d75;
+    --font-color: #DFDEE3;
     --texts: #C0BEC6;
     --res: #8f92b5;
     background-color: var(--bg-body);
@@ -17,9 +18,19 @@ body {
     --bg-body: #445D88;
     --bg-gradient: linear-gradient( to right, #30415F, transparent, #30415F);
     --bg-slide-color: #222F44;
+    --bg-slide-color2: #394d6d;
     /*font colors dark*/
     --font-color: #DFDEE3;
     --texts: #C0BEC6;
+}
+.open-modal-button,
+.open-modal-button2,
+.open-modal-button3,
+.open-modal-button4 {
+    color: var(--font-color);
+    font-family: "Bungee", sans-serif;
+    padding: 0.4rem;
+    background-color: var(--bg-slide-color2);
 }
 .modal-container,
 .modal-container2,

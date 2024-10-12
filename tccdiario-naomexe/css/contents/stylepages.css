@@ -15,9 +15,6 @@ a:hover {
     transition: 0.2s;
     color: #4f5d75;
 }
-a:active {
-    color: #38404e;
-}
 html {
     font-size: 16px;
 }
@@ -28,7 +25,7 @@ body {
     --bg-gradient: linear-gradient( to right, #b1b695, transparent, #b1b695);
     --bg-slide-color: #464c67;
     /*font colors light*/
-    --font-color: #4f5d75;
+    --font-color: #DFDEE3;
     --texts: #C0BEC6;
     --res: #8f92b5;
     max-height: 100vh;
@@ -52,7 +49,7 @@ body::-webkit-scrollbar {
     --texts: #C0BEC6;
 }
 #navbar {
-    color:var(--font-color);
+    color: var(--font-color);
     background-color: var(--bg-slide-color);
     padding-left: 2vw;
     padding-right: 2vw;
@@ -93,7 +90,7 @@ button{
 .side{
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    color: var(--res);
+    color: var(--font-color);
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -109,7 +106,7 @@ button{
     font-family: "Bungee", sans-serif;
     font-style: normal;
     font-size: 0.9rem;
-    color:var(--res);
+    color:var(--font-color);
 }
 main {
     display: flex;
@@ -157,13 +154,13 @@ main {
 }
 .card:hover {
     scale: 1.05;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in-out;
     color: #DFDEE3;
 }
 footer {
     font-family: "Bungee", sans-serif;
     margin-top: 4rem;
-    background-color: #222F44;
+    background-color:var(--bg-slide-color);
     width: 100vw;
     height: 5.1vh;
     display: flex;
@@ -172,6 +169,7 @@ footer {
 }
 
 footer p {
+    color: var(--font-color);
     margin-right: 0.9rem;
     margin-left: 0.9rem;
 }
