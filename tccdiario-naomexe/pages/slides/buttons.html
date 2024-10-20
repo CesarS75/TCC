@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebars</title>
+    <link rel="stylesheet" href="../../css/contents/stylepages.css">
+    <link rel="stylesheet" href="../../css/contents/modal.css">
+    <!--fonte bungee-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--fonte montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <nav id="navbar">
+          <div id="logo">
+            <a href="../../index.html">
+              <img src="../../images/logo.png" alt="logo">
+            </a>
+          </div>
+        <div class="categorias">
+          <a href="../int.html">
+            <p>Introdução</p>
+          </a>
+          <a href="../sobre.html">
+            <p>Sobre</p>
+          </a>
+        </div>
+        <div id="mode">
+          <!--botão para fazer a troca de estados dark/light-->
+          <button id="toggle" class="button">
+            <img src="../../images/sun.png" alt="mode">
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+    <article id="sidebar">
+            <div class="side">
+              <a class="navside" href ="../slides/navbar.html">navbars</a>
+              <a class="navside" href ="../slides/sidebar.html">sidebars</a>
+              <a class="navside" href ="../slides/footer.html">footers</a>
+              <a class="navside" href ="../slides/modals.html">modals</a>
+              <a class="navside" href ="../slides/forms.html">forms</a>
+              <a class="navside" href ="../slides/alerts.html">alerts</a>
+              <a class="navside" href ="../slides/button.html">buttons</a>
+              <a class="navside" href ="../slides/card.html">cards</a>
+              <a class="navside" href ="../slides/pgbars.html">pgbars</a>
+            </div>
+      </article>
+      <section class="cards">
+          <!--Card 1-->
+          <div class="card">
+              <strong>
+              <p class="title"></p>
+              </strong>
+              <img src="../../images/sidebars/" alt="Exemplo de ">
+              <div class="descricao">
+                <p></p>
+                <button class="open-modal-button">
+                  Inspecionar
+                </button>
+              </div>
+          </div>
+          <!--Modal Only-->
+          <div class="modal-container">
+            <div class="modal">
+              <div class="close"><button class="close-btn" onclick="closeModal()">Close</button></div>
+              <div class="modalpt1">
+                <img src="../../images/" alt="Foto de Teste">
+              </div>
+              <div class="modalpt2">
+                  <!--PARTE DO MODAL Q É DO CODIGOHTML-->
+                  <div class="codHtml">
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        <input type="radio" name="slide" id="slide5">
+                        <div class="slide s1">
+                            <img src="../../images/" alt="Foto slide1">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/" alt="Foto slide2">
+                        </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1"></label>
+                          <label class="bar" for="slide2"></label>
+                      </div>
+                      </div>
+                    </section>
+<!--CODIGO HTML-->
+                    <p id="codigoHtml" hidden>
+                      
+                    </p>
+                    <button onclick="copiarTextoHtml()">Copiar</button>
+                  </div>
+                  <!--PARTE DO MODAL Q É DO CODIGOCSS-->
+                  <div class="codCss">
+                    <section class="content">
+                      <div class="slides">
+                        <div class="slide">
+                            <img src="../../images/" alt="Foto Slide1">
+                        </div>
+                      </div>
+                    </section>
+<!--CODIGO CSS-->
+                      <p id="codigoCss" hidden>
+                        
+                      </p>
+                      <button onclick="copiarTextoCss()">Copiar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="card">
+            <strong>
+            <p class="title"></p>
+            </strong>
+            <img src="../../images/" alt="Exemplo de ">
+            <div class="descricao">
+              <p></p>
+              <button class="open-modal-button2">
+                Inspecionar
+              </button>
+            </div>
+        </div>
+        <!--Modal Only-->
+        <div class="modal-container2">
+          <div class="modal2">
+            <div class="close"><button class="close-btn2" onclick="closeModal2()">Close</button></div>
+            <div class="modalpt12">
+              <img src="../../images/" alt="Foto de Teste">
+            </div>
+            <div class="modalpt22">
+                <div class="codHtml">
+                  <section class="content">
+                    <div class="slides">
+                      <input type="radio" name="slide" id="slide1_2" checked>
+                      <input type="radio" name="slide" id="slide2_2">
+                      <input type="radio" name="slide" id="slide3_2">
+                      <input type="radio" name="slide" id="slide4_2">
+                      <input type="radio" name="slide" id="slide5_2">
+                      <div class="slide s2">
+                          <img src="../../images/" alt="Slide1">
+                      </div>
+                      <div class="slide">
+                          <img src="../../images/" alt="Slide2">
+                      </div>
+                      <div class="navigation">
+                        <label class="bar" for="slide1_2"></label>
+                        <label class="bar" for="slide2_2"></label>
+                    </div>
+                    </div>
+                  </section>
+<!--Codigo HTML2-->
+                  <p id="codigoHtml2" hidden>
+                    
+                  </p>
+                  <button onclick="copiarTextoHtml2()">Copiar</button>
+                </div>
+                <div class="codCss">
+                  <section class="content">
+                    <div class="slides">
+                      <input type="radio" name="slide" id="slide1_2" checked>
+                      <input type="radio" name="slide" id="slide2_22">
+                      <input type="radio" name="slide" id="slide3_22">
+                      <input type="radio" name="slide" id="slide4_22">
+                      <input type="radio" name="slide" id="slide5_22">
+                      <div class="slide s2">
+                          <img src="../../images/" alt="Slide1">
+                      </div>
+                      <div class="slide">
+                        <img src="../../images/" alt="Slide2">
+                      </div>
+                      <div class="slide">
+                        <img src="../../images/" alt="Slide3">
+                      </div>
+                      <div class="navigation">
+                        <label class="bar" for="slide1_2"></label>
+                        <label class="bar" for="slide2_22"></label>
+                        <label class="bar" for="slide3_22"></label>
+                    </div>
+                    </div>
+                  </section>
+<!--CODIGOCSS2-->
+                    <p id="codigoCss2" hidden>
+                      
+                    </p>
+                    <button onclick="copiarTextoCss2()">Copiar</button>
+                </div>
+            </div>
+          </div>
+        </div>
+            <!--Card 3-->
+            <div class="card">
+              <strong>
+              <p class="title"></p>
+              </strong>
+              <img src="../../images/" alt="Exemplo de">
+              <div class="descricao">
+                <p></p>
+                <button class="open-modal-button3">
+                  Inspecionar
+                </button>
+              </div>
+          </div>
+          <!--Modal Only-->
+          <div class="modal-container3">
+            <div class="modal3">
+              <div class="close"><button class="close-btn3" onclick="closeModal3()">Close</button></div>
+              <div class="modalpt13">
+                <img src="" alt="Foto de ">
+              </div>
+              <div class="modalpt23">
+                  <div class="codHtml">
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1_3" checked>
+                        <input type="radio" name="slide" id="slide2_3">
+                        <input type="radio" name="slide" id="slide3_3">
+                        <input type="radio" name="slide" id="slide4_3">
+                        <input type="radio" name="slide" id="slide5_3">
+                        <div class="slide s3">
+                            <img src="../../images/" alt="Slide1">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/" alt="Slide2">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/" alt="Slide3">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/" alt="Slide4">
+                        </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1_3"></label>
+                          <label class="bar" for="slide2_3"></label>
+                          <label class="bar" for="slide3_3"></label>
+                          <label class="bar" for="slide4_3"></label>
+                      </div>
+                      </div>
+                    </section>
+<!--CODIGOHTML3-->
+                    <div id="codigoHtml3" hidden>
+
+                    </div>
+                    <button onclick="copiarTextoHtml3()">Copiar</button>
+                  </div>
+                  <div class="codCss">
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1_3" checked>
+                        <input type="radio" name="slide" id="slide2_32">
+                        <input type="radio" name="slide" id="slide3_32">
+                        <input type="radio" name="slide" id="slide4_32">
+                        <input type="radio" name="slide" id="slide5_32">
+                        <input type="radio" name="slide" id="slide6_32">
+                        <div class="slide s3">
+                            <img src="../../images/" alt="Slide1">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/" alt="Slide2">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/" alt="Slide3">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/" alt="Slide4">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/" alt="Slide5">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/" alt="Slide6">
+                        </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1_3"></label>
+                          <label class="bar" for="slide2_32"></label>
+                          <label class="bar" for="slide3_32"></label>
+                          <label class="bar" for="slide4_32"></label>
+                          <label class="bar" for="slide5_32"></label>
+                          <label class="bar" for="slide6_32"></label>
+                      </div>
+                      </div>
+                    </section>
+<!--CODIGOCSS3-->
+                      <p id="codigoCss3" hidden>
+                        
+                      </p>
+                      <button onclick="copiarTextoCss3()">Copiar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+            <!--Card 4-->
+            
+            
+        </section>
+    </main>
+    <footer>
+      <p> &copy ETEC 2024</p>
+      <p>Contato: @csslibraryetec@gmail.com</p>
+    </footer>
+    <script src="../../js/copy.js"></script>
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/mode.js"></script>
+</body>
+</html>

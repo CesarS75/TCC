@@ -128,6 +128,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.codHtml button,
+.codHtml2 button,
+.codHtml3 button,
+.codHtml4 button,
+.codHtml5 button {
+    border-radius: 1rem 0 1rem 0;
+    background-color: var(--bg-slide-color2);
+    color: var(--font-color);
+}
+.codHtml button:active,
+.codHtml2 button:active,
+.codHtml3 button:active,
+.codHtml4 button:active,
+.codHtml5 button:active {
+    filter: brightness(1.5);
+}
 .codHtml img,
 .codHtml2 img,
 .codHtml3 img,
@@ -146,6 +162,22 @@ body {
     justify-content: space-between;
     border-top: black 2px solid;
     height: 50%;
+}
+.codCss button,
+.codCss2 button,
+.codCss3 button,
+.codCss4 button,
+.codCss5 button {
+    border-radius: 1rem 0 1rem 0;
+    background-color: var(--bg-slide-color2);
+    color: var(--font-color);
+}
+.codCss button:active,
+.codCss2 button:active,
+.codCss3 button:active,
+.codCss4 button:active,
+.codCss5 button:active {
+    filter: brightness(1.5);
 }
 #codigoHtml,
 #codigoHtml2
@@ -183,23 +215,35 @@ body {
     width: 100%;
     height: 100%;
 }
-/* Navbar */
-#slide1:checked ~ .s1, #slide12:checked ~ .s2, #slide13 ~ .s3{
+/* Modal */
+#slide1:checked ~ .s1,
+#slide1_2:checked ~ .s2,
+#slide1_3 ~ .s3{
     margin-left: 0;
 }
-#slide2:checked ~.s1 ,#slide21:checked ~ .s2, #slide22:checked ~ .s2, #slide23:checked ~ .s3, #slide24:checked ~ .s3{
+#slide2:checked ~ .s1 ,
+#slide2_2:checked ~ .s2, #slide2_22:checked ~ .s2, /*Card 2*/
+#slide2_3:checked ~ .s3, #slide2_32:checked ~ .s3  /*Card 3*/{ 
     margin-left: -20%;
 }
-#slide31:checked ~ .s2, #slide32:checked ~ .s3,#slide33:checked ~ .s3{
+#slide3:checked ~ .s1,
+#slide3_2:checked ~ .s2, #slide3_22:checked ~ .s2, /*Card 2*/
+#slide3_3:checked ~ .s3, #slide3_32:checked ~ .s3  /*Card 3*/{
     margin-left: -40%;
 }
-#slide41:checked ~ .s3, #slide42:checked ~ .s3 {
+#slide4:checked ~ .s1,
+#slide4_2:checked ~ .s2, #slide4_22:checked ~ .s2, /*Card 2*/
+#slide4_3:checked ~ .s3, #slide4_32:checked ~ .s3  /*Card 3*/{
     margin-left: -60%
 }
-#slide51:checked ~ .s3 {
+#slide5:checked ~ .s1,
+#slide5_2:checked ~ .s2, #slide5_22:checked ~ .s2, /*Card 2*/
+#slide5_3:checked ~ .s3, #slide5_32:checked ~ .s3  /*Card 3*/{
     margin-left: -80%;
 }
-#slide61:checked ~ .s3 {
+#slide6:checked ~ .s1,
+#slide6_2:checked ~ .s2, #slide6_22:checked ~ .s2, /*Card 2*/
+#slide6_3:checked ~ .s3, #slide6_32:checked ~ .s3  /*Card 3*/{
     margin-left: -100%;
 }
 /* Categoria 2 (slideX_2) */
@@ -221,9 +265,10 @@ body {
 .bar {
     width: 70px;
     height: 15px;
-    border: 2px solid var(--bg-slide-color);
+    border: 2px solid var(--font-color);
     margin: 6px;
     border-radius: 5px;
+    background-color: var(--bg-slide-color);
     cursor: pointer; 
 }
 .bar:hover {
