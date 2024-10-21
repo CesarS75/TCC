@@ -134,7 +134,7 @@ main {
     margin-bottom: 1.5rem;
     border: 4px black solid;
     width: 25vw;
-    height: 35vh;
+    height: 40vh;
     border-radius: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
@@ -144,8 +144,8 @@ main {
     width: 6vw;
 }
 .card img {
-    margin: auto auto;
-    width: 100%;    
+    margin: auto auto;   
+    height: 60%;
 }
 
 .card .descricao {

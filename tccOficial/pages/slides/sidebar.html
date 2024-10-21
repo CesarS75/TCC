@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebars</title>
+    <link rel="stylesheet" href="../../css/contents/stylepages.css">
+    <link rel="stylesheet" href="../../css/contents/modal.css">
+    <!--fonte bungee-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--fonte montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <nav id="navbar">
+          <div id="logo">
+            <a href="../../index.html">
+              <img src="../../images/logo.png" alt="logo">
+            </a>
+          </div>
+        <div class="categorias">
+          <a href="../int.html">
+            <p>Introdução</p>
+          </a>
+          <a href="../sobre.html">
+            <p>Sobre</p>
+          </a>
+        </div>
+        <div id="mode">
+          <!--botão para fazer a troca de estados dark/light-->
+          <button id="toggle" class="button">
+            <img src="../../images/sun.png" alt="mode">
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+    <article id="sidebar">
+            <div class="side">
+              <a class="navside" href ="../slides/navbar.html">navbars</a>
+              <a class="navside" href ="../slides/sidebar.html">sidebars</a>
+              <a class="navside" href ="../slides/footer.html">footers</a>
+              <a class="navside" href ="../slides/modals.html">modals</a>
+              <a class="navside" href ="../slides/forms.html">forms</a>
+              <a class="navside" href ="../slides/alerts.html">alerts</a>
+              <a class="navside" href ="../slides/button.html">buttons</a>
+              <a class="navside" href ="../slides/card.html">cards</a>
+              <a class="navside" href ="../slides/pgbars.html">pgbars</a>
+            </div>
+      </article>
+      <section class="cards">
+          <!--Card 1-->
+          <div class="card">
+              <strong>
+              <p class="title">Sidebar1</p>
+              </strong>
+              <img src="../../images/sidebars/sidebar1.png" alt="Exemplo de Sidebar">
+              <div class="descricao">
+                <p>Sidebar Simples c/ Redes Sociais</p>
+                <button class="open-modal-button">
+                  Inspecionar
+                </button>
+              </div>
+          </div>
+          <!--Modal Only-->
+          <div class="modal-container">
+            <div class="modal">
+              <div class="close"><button class="close-btn" onclick="closeModal()">Close</button></div>
+              <div class="modalpt1">
+                <img src="../../images/sidebars/sidebar1.png" alt="Foto de Teste">
+              </div>
+              <div class="modalpt2">
+                  <!--PARTE DO MODAL Q É DO CODIGOHTML-->
+                  <div class="codHtml">
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <div class="slide s1">
+                            <img src="../../images/sidebars/sidebar1html1.png" alt="Foto Slide1html">
+                        </div>    
+                      </div>
+                    </section>
+<!--CODIGO HTML-->
+                    <p id="codigoHtml" hidden>
+                      <!--
+                      <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A simple sidebar</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Audiowide'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<nav>
+  <ul class="sidebar">
+    <li class="menu-item">
+      <span class="icon">
+        <i class="fa fa-solid fa-house"></i>
+      </span>
+      <span class="label">Home</span>
+    </li>
+    <li class="menu-item">
+      <span class="icon">
+        <i class="fa fa-brands fa-youtube"></i>
+      </span>
+      <span class="label">Youtube</span>
+    </li>
+    <li class="menu-item">
+      <span class="icon">
+        <i class="fa fa-brands fa-instagram"></i>
+      </span>
+      <span class="label">Instagram</span>
+    </li>
+    <li class="menu-item">
+      <span class="icon">
+        <i class="fa fa-solid fa-envelope"></i>
+      </span>
+      <span class="label">Mail</span>
+    </li>
+    <li class="menu-item">
+      <span class="icon">
+        <i class="fa fa-solid fa-user"></i>
+      </span>
+      <span class="label">Profile</span>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>
+                      -->
+                    </p>
+                    <button onclick="copiarTextoHtml()">Copiar</button>
+                  </div>
+                  <!--PARTE DO MODAL Q É DO CODIGOCSS-->
+                  <div class="codCss">
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <div class="slide s1">
+                            <img src="../../images/sidebars/Sidebar1css1.png" alt="Foto Slide1css">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/sidebars/Sidebar1css2.png" alt="Foto Slide2css">
+                        </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1"></label>
+                          <label class="bar" for="slide2"></label>
+                        </div>
+                      </div>
+                    </section>
+<!--CODIGO CSS-->
+                      <p id="codigoCss" hidden>
+                        <!--
+                        body {
+	font-family: "Audiowide", Fantasy;
+	background: black;
+	color: white;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 48px;
+  padding: 0;
+  margin: 0;
+	background: #1d1d1d;
+	overflow: hidden;
+	transition: width 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.sidebar:hover {
+	width: 200px;
+}
+
+.menu-item:hover {
+	border: 1px solid white;
+}
+
+.sidebar:hover .label{
+	opacity: 1;
+}
+
+.menu-item {
+	padding: 12px;
+	text-decoration: none;
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.menu-item .icon {
+	text-align: center;
+	padding: 4px;
+}
+
+.menu-item:hover {
+	background: white;
+	color: #1d1d1d;
+}
+
+.menu-item .label {
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out; 
+}
+
+.menu-item:last-child {
+	margin-top: auto;
+}
+
+[class*="fa-"]::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+                        -->
+                      </p>
+                      <button onclick="copiarTextoCss()">Copiar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="card">
+            <strong>
+            <p class="title">Sidebar2</p>
+            </strong>
+            <img src="../../images/sidebars/sidebar2.png" alt="Exemplo de Sidebar">
+            <div class="descricao">
+              <p>Hover to Open Sidebar</p>
+              <button class="open-modal-button2">
+                Inspecionar
+              </button>
+            </div>
+        </div>
+        <!--Modal Only-->
+        <div class="modal-container2">
+          <div class="modal2">
+            <div class="close"><button class="close-btn2" onclick="closeModal2()">Close</button></div>
+            <div class="modalpt12">
+              <img src="../../images/sidebars/sidebar2.png" alt="Foto de Teste">
+            </div>
+            <div class="modalpt22">
+                <div class="codHtml">
+                  <section class="content">
+                    <div class="slides">
+                      <input type="radio" name="slide" id="slide1_2" checked>
+                      <input type="radio" name="slide" id="slide2_2">
+                      <input type="radio" name="slide" id="slide3_2">
+                      <input type="radio" name="slide" id="slide4_2">
+                      <input type="radio" name="slide" id="slide5_2">
+                      <div class="slide s2">
+                          <img src="../../images/sidebars/SIdebar2html1.png" alt="Slide1">
+                      </div>
+                    </div>
+                  </section>
+<!--Codigo HTML2-->
+                  <p id="codigoHtml2" hidden>
+                    <!--
+                    <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Hover Sidebar Part 1</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<bod>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<div id="mySidebar" class="sidebar">
+  <a href="#"><span><i class="material-icons">info</i><span class="icon-text">about</span></a><br>
+  <a href="#"><i class="material-icons">spa</i><span class="icon-text"></span>services</a></span>
+  </a><br>
+  <a href="#"><i class="material-icons">monetization_on</i><span class="icon-text"></span>clients</span></a><br>
+  <a href="#"><i class="material-icons">email</i><span class="icon-text"></span>contact<span></a>
+</div>
+
+<div id="main">
+  <h2>A simple sidebar.</h2>
+  <p>The sidebar is in fixed position and does not close.</p>
+</div>
+  
+</boy>
+</html>
+
+                    -->
+                  </p>
+                  <button onclick="copiarTextoHtml2()">Copiar</button>
+                </div>
+                <div class="codCss">
+                  <section class="content">
+                    <div class="slides">
+                      <input type="radio" name="slide" id="slide1_2" checked>
+                      <input type="radio" name="slide" id="slide2_22">
+                      <input type="radio" name="slide" id="slide3_22">
+                      <input type="radio" name="slide" id="slide4_22">
+                      <input type="radio" name="slide" id="slide5_22">
+                      <div class="slide s2">
+                          <img src="../../images/sidebars/Sidebar2css1.png" alt="Slide1">
+                      </div>
+                      <div class="slide">
+                        <img src="../../images/sidebars/Sidebar2css2.png" alt="Slide2">
+                      </div>
+                      <div class="navigation">
+                        <label class="bar" for="slide1_2"></label>
+                        <label class="bar" for="slide2_22"></label>
+                    </div>
+                    </div>
+                  </section>
+<!--CODIGOCSS2-->
+                    <p id="codigoCss2" hidden>
+                      <!--
+                      body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+main .sidebar{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+}
+
+.material-icons {
+
+  margin-right: 30px
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 250px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+                      -->
+                    </p>
+                    <button onclick="copiarTextoCss2()">Copiar</button>
+                </div>
+            </div>
+          </div>
+        </div>
+            <!--Card 3-->
+            <div class="card">
+              <strong>
+              <p class="title">Sidebar3</p>
+              </strong>
+              <img src="../../images/sidebars/sidebar3.png" alt="Exemplo de Sidebar">
+              <div class="descricao">
+                <p>Sidebar c/ Redes sociais, botão pra abrir e responsividade</p>
+                <button class="open-modal-button3">
+                  Inspecionar
+                </button>
+              </div>
+          </div>
+          <!--Modal Only-->
+          <div class="modal-container3">
+            <div class="modal3">
+              <div class="close"><button class="close-btn3" onclick="closeModal3()">Close</button></div>
+              <div class="modalpt13">
+                <img src="../../images/sidebars/sidebar3.png" alt="Foto da Sidebar3">
+              </div>
+              <div class="modalpt23">
+                  <div class="codHtml">
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1_3" checked>
+                        <input type="radio" name="slide" id="slide2_3">
+                        <input type="radio" name="slide" id="slide3_3">
+                        <input type="radio" name="slide" id="slide4_3">
+                        <input type="radio" name="slide" id="slide5_3">
+                        <div class="slide s3">
+                            <img src="../../images/sidebars/Sidebar3html1.png" alt="Slide1">
+                        </div>
+                      </div>
+                    </section>
+<!--CODIGOHTML3-->
+                    <div id="codigoHtml3" hidden>
+                      <!--
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li>Exemplo Épico<span>Web Developer</span></li>
+      <li><a href="XD" target="_blank">Company</a></li>
+      <li><a href="XD" target="_blank">Instagram</a></li>
+      <li><a href="XD" target="_blank">Twitter</a></li>
+      <li><a href="XD" target="_blank">YouTube</a></li>
+      <li><a href="XD"target="_blank">Linkedin</a></li>
+    </ul>
+  </div>
+  <div id='center' class="main center">
+    <div class="mainInner">
+      <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+    </div>
+    <div class="mainInner">
+      <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+    </div>
+    <div class="mainInner">
+      <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+    </div>
+  </div>
+                      -->
+                    </div>
+                    <button onclick="copiarTextoHtml3()">Copiar</button>
+                  </div>
+                  <div class="codCss">
+                    <section class="content">
+                      <div class="slides">
+                        <input type="radio" name="slide" id="slide1_3" checked>
+                        <input type="radio" name="slide" id="slide2_32">
+                        <input type="radio" name="slide" id="slide3_32">
+                        <input type="radio" name="slide" id="slide4_32">
+                        <input type="radio" name="slide" id="slide5_32">
+                        <input type="radio" name="slide" id="slide6_32">
+                        <div class="slide s3">
+                            <img src="../../images/sidebars/Sidebar3css1.png" alt="Slide1">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/sidebars/Sidebar3css2.png" alt="Slide2">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/sidebars/Sidebar3css3.png" alt="Slide3">
+                        </div>
+                        <div class="slide">
+                          <img src="../../images/sidebars/Sidebar3css4.png" alt="Slide4">
+                        </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1_3"></label>
+                          <label class="bar" for="slide2_32"></label>
+                          <label class="bar" for="slide3_32"></label>
+                          <label class="bar" for="slide4_32"></label>
+                      </div>
+                      </div>
+                    </section>
+<!--CODIGOCSS3-->
+                      <p id="codigoCss3" hidden>
+                        <!--
+                        @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden; height: 100%;
+}
+body {
+    background: #fff; padding: 0; margin: 0; font-family: 'Varela Round', sans-serif;
+}
+.header {
+    display: block; margin: 0 auto;
+    width: 100%; max-width: 100%;
+    box-shadow: none;
+    background-color: #FC466B;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto; display: block; height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table; height: 100%; width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em; font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px; margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+}
+.sidebarMenuInner{
+    margin:0; padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase; font-weight: bold; cursor: pointer; text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+input[type=checkbox], .sidebarIconToggle, .spinner, .horizontal, input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal,  
+.diagonal.part-1, .diagonal.part-2 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1,
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    box-sizing: border-box;
+} 
+input[type=checkbox] {
+    transition: all 0.3s;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%; width: 100%;
+    top: 22px; left: 15px;
+    height: 22px; width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    position: absolute;
+    height: 3px; width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+                        -->
+                      </p>
+                      <button onclick="copiarTextoCss3()">Copiar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+            <!--Card 4-->
+            
+            
+        </section>
+    </main>
+    <footer>
+      <p> &copy ETEC 2024</p>
+      <p>Contato: @csslibraryetec@gmail.com</p>
+    </footer>
+    <script src="../../js/copy.js"></script>
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/mode.js"></script>
+</body>
+</html>
