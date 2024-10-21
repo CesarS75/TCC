@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebars</title>
+    <title>Buttons</title>
     <link rel="stylesheet" href="../../css/contents/stylepages.css">
     <link rel="stylesheet" href="../../css/contents/modal.css">
     <!--fonte bungee-->
@@ -58,11 +58,11 @@
           <!--Card 1-->
           <div class="card">
               <strong>
-              <p class="title"></p>
+              <p class="title">Button 1</p>
               </strong>
-              <img src="../../images/sidebars/" alt="Exemplo de ">
+              <img src="../../images/buttons/button1.png" alt="Exemplo de Botão">
               <div class="descricao">
-                <p></p>
+                <p>Botão - Hover com efeito de Swipe - CodePen</p>
                 <button class="open-modal-button">
                   Inspecionar
                 </button>
@@ -73,7 +73,7 @@
             <div class="modal">
               <div class="close"><button class="close-btn" onclick="closeModal()">Close</button></div>
               <div class="modalpt1">
-                <img src="../../images/" alt="Foto de Teste">
+                <img src="../../images/buttons/button1.png" id="nH" alt="Foto de Teste">
               </div>
               <div class="modalpt2">
                   <!--PARTE DO MODAL Q É DO CODIGOHTML-->
@@ -81,25 +81,26 @@
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                        <input type="radio" name="slide" id="slide4">
-                        <input type="radio" name="slide" id="slide5">
                         <div class="slide s1">
-                            <img src="../../images/" alt="Foto slide1">
+                            <img src="../../images/buttons/button1html1.png" alt="Foto slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/" alt="Foto slide2">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1"></label>
-                          <label class="bar" for="slide2"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGO HTML-->
                     <p id="codigoHtml" hidden>
-                      
+                      <!--
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Button Hover Effects</title>
+</head>
+<bod>
+  <a class="btn-0" href="#">Swipe</a>
+  <h4>By: <a href="http://kylebrumm.com" target="_blank">Kyle Brumm</a></h4>
+</bod>
+</html>
+                      -->
                     </p>
                     <button onclick="copiarTextoHtml()">Copiar</button>
                   </div>
@@ -107,14 +108,82 @@
                   <div class="codCss">
                     <section class="content">
                       <div class="slides">
-                        <div class="slide">
-                            <img src="../../images/" alt="Foto Slide1">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2" checked>
+                        <div class="slide s1">
+                            <img src="../../images/buttons/button1css1.png" alt="Foto Slide1">
                         </div>
+                        <div class="slide">
+                          <img src="../../images/buttons/button1css2.png" alt="Foto Slide2">
+                        </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1"></label>
+                          <label class="bar" for="slide2"></label>
+                      </div>
                       </div>
                     </section>
 <!--CODIGO CSS-->
                       <p id="codigoCss" hidden>
-                        
+                        <!--
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+html {
+  padding-top: 50px;
+  font-family: "Open Sans", Helvetica, arial, sans-serif;
+  text-align: center;
+  background-color: #eeeeee;
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+*:before,
+*:after {
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+  line-height: 80px;
+  color: black;
+}
+@media (min-width: 600px) {
+  .wrap {
+    width: 50%;
+    float: left;
+  }
+}
+[class^=btn-] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+.btn-0 {
+  color: #2c5ecd;
+}
+.btn-0:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #042876;
+  transform: translateX(-100%);
+}
+.btn-0:hover {
+  color: #c1d0f0;
+}
+.btn-0:hover:before {
+  transform: translateX(0);
+}
+                        -->
                       </p>
                       <button onclick="copiarTextoCss()">Copiar</button>
                   </div>
@@ -124,11 +193,11 @@
           <!--Card 2-->
           <div class="card">
             <strong>
-            <p class="title"></p>
+            <p class="title">Button 2</p>
             </strong>
-            <img src="../../images/" alt="Exemplo de ">
+            <img src="../../images/buttons/button2.png" alt="Exemplo de Botão2">
             <div class="descricao">
-              <p></p>
+              <p>Botão - Candy Color Button Animation - CodePen </p>
               <button class="open-modal-button2">
                 Inspecionar
               </button>
@@ -139,7 +208,7 @@
           <div class="modal2">
             <div class="close"><button class="close-btn2" onclick="closeModal2()">Close</button></div>
             <div class="modalpt12">
-              <img src="../../images/" alt="Foto de Teste">
+              <img src="../../images/buttons/button2.png" id="nH" alt="Foto de Teste">
             </div>
             <div class="modalpt22">
                 <div class="codHtml">
@@ -151,20 +220,25 @@
                       <input type="radio" name="slide" id="slide4_2">
                       <input type="radio" name="slide" id="slide5_2">
                       <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
+                          <img src="../../images/buttons/button2html1.png" alt="Slide1">
                       </div>
-                      <div class="slide">
-                          <img src="../../images/" alt="Slide2">
-                      </div>
-                      <div class="navigation">
-                        <label class="bar" for="slide1_2"></label>
-                        <label class="bar" for="slide2_2"></label>
-                    </div>
                     </div>
                   </section>
 <!--Codigo HTML2-->
                   <p id="codigoHtml2" hidden>
-                    
+                    <!--
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Candy Color Button Animation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<bod>
+  <button class="custom-btn btn-5">Click</button>
+</bod>
+</html> 
+                    -->
                   </p>
                   <button onclick="copiarTextoHtml2()">Copiar</button>
                 </div>
@@ -173,28 +247,81 @@
                     <div class="slides">
                       <input type="radio" name="slide" id="slide1_2" checked>
                       <input type="radio" name="slide" id="slide2_22">
-                      <input type="radio" name="slide" id="slide3_22">
-                      <input type="radio" name="slide" id="slide4_22">
-                      <input type="radio" name="slide" id="slide5_22">
                       <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
+                          <img src="../../images/buttons/button2css1.png" alt="Slide1">
                       </div>
                       <div class="slide">
-                        <img src="../../images/" alt="Slide2">
-                      </div>
-                      <div class="slide">
-                        <img src="../../images/" alt="Slide3">
+                        <img src="../../images/buttons/button2css2.png" alt="Slide2">
                       </div>
                       <div class="navigation">
                         <label class="bar" for="slide1_2"></label>
                         <label class="bar" for="slide2_22"></label>
-                        <label class="bar" for="slide3_22"></label>
                     </div>
                     </div>
                   </section>
 <!--CODIGOCSS2-->
                     <p id="codigoCss2" hidden>
-                      
+                      <!--
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+                      -->
                     </p>
                     <button onclick="copiarTextoCss2()">Copiar</button>
                 </div>
@@ -204,9 +331,9 @@
             <!--Card 3-->
             <div class="card">
               <strong>
-              <p class="title"></p>
+              <p class="title">Button 3</p>
               </strong>
-              <img src="../../images/" alt="Exemplo de">
+              <img src="../../images/buttons/button3.png" alt="Exemplo de Botão">
               <div class="descricao">
                 <p></p>
                 <button class="open-modal-button3">
@@ -219,40 +346,33 @@
             <div class="modal3">
               <div class="close"><button class="close-btn3" onclick="closeModal3()">Close</button></div>
               <div class="modalpt13">
-                <img src="" alt="Foto de ">
+                <img src="../../images/buttons/button3.png" id="nH" alt="Foto de ">
               </div>
               <div class="modalpt23">
                   <div class="codHtml">
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
-                        <input type="radio" name="slide" id="slide2_3">
-                        <input type="radio" name="slide" id="slide3_3">
-                        <input type="radio" name="slide" id="slide4_3">
-                        <input type="radio" name="slide" id="slide5_3">
                         <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
+                            <img src="../../images/buttons/button3html1.png" alt="Slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1_3"></label>
-                          <label class="bar" for="slide2_3"></label>
-                          <label class="bar" for="slide3_3"></label>
-                          <label class="bar" for="slide4_3"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGOHTML3-->
                     <div id="codigoHtml3" hidden>
-
+                      <!--
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Candy Color Button Animation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<bod>
+  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+</bod>
+</html>
+                      -->
                     </div>
                     <button onclick="copiarTextoHtml3()">Copiar</button>
                   </div>
@@ -261,41 +381,78 @@
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
                         <input type="radio" name="slide" id="slide2_32">
-                        <input type="radio" name="slide" id="slide3_32">
-                        <input type="radio" name="slide" id="slide4_32">
-                        <input type="radio" name="slide" id="slide5_32">
-                        <input type="radio" name="slide" id="slide6_32">
                         <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
+                            <img src="../../images/buttons/button3css1.png" alt="Slide1">
                         </div>
                         <div class="slide">
-                          <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide5">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide6">
+                          <img src="../../images/buttons/button3css2.png" alt="Slide2">
                         </div>
                         <div class="navigation">
                           <label class="bar" for="slide1_3"></label>
                           <label class="bar" for="slide2_32"></label>
-                          <label class="bar" for="slide3_32"></label>
-                          <label class="bar" for="slide4_32"></label>
-                          <label class="bar" for="slide5_32"></label>
-                          <label class="bar" for="slide6_32"></label>
                       </div>
                       </div>
                     </section>
 <!--CODIGOCSS3-->
                       <p id="codigoCss3" hidden>
-                        
+                        <!--
+    .btn-12{
+    position: relative;
+    right: 20px; bottom: 20px; border:none; box-shadow: none;
+    width: 130px; height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px; perspective: 230px;
+  }
+  .btn-12 span {
+    background: rgb(0,172,238); background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    display: block;
+    position: absolute;
+    width: 130px; height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn-12 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg); -moz-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px; -moz-transform-origin: 50% 50% -20px; transform-origin: 50% 50% -20px;
+  }
+  .btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-12:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+                        -->
                       </p>
                       <button onclick="copiarTextoCss3()">Copiar</button>
                   </div>

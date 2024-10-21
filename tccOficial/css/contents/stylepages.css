@@ -144,8 +144,14 @@ main {
     width: 6vw;
 }
 .card img {
-    margin: auto auto;   
+    margin: auto auto;
+    width: 90%;   
     height: 60%;
+}
+#nH {
+    margin: auto auto;
+    width: 90%;
+    height: fit-content;
 }
 
 .card .descricao {
