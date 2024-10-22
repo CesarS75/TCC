@@ -58,9 +58,9 @@
           <!--Card 1-->
           <div class="card">
               <strong>
-              <p class="title"></p>
+              <p class="title">Card 1</p>
               </strong>
-              <img src="../../images/" alt="Exemplo de ">
+              <img src="../../images/cards/card1.png" alt="Exemplo de Card">
               <div class="descricao">
                 <p></p>
                 <button class="open-modal-button">
@@ -73,7 +73,7 @@
             <div class="modal">
               <div class="close"><button class="close-btn" onclick="closeModal()">Close</button></div>
               <div class="modalpt1">
-                <img src="../../images/" alt="Foto de Teste">
+                <img src="../../images/cards/card1.png" alt="Foto do Card1">
               </div>
               <div class="modalpt2">
                   <!--PARTE DO MODAL Q É DO CODIGOHTML-->
@@ -81,25 +81,22 @@
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                        <input type="radio" name="slide" id="slide4">
-                        <input type="radio" name="slide" id="slide5">
                         <div class="slide s1">
-                            <img src="../../images/" alt="Foto slide1">
+                            <img src="../../images/cards/card1html1" alt="Foto slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/" alt="Foto slide2">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1"></label>
-                          <label class="bar" for="slide2"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGO HTML-->
                     <p id="codigoHtml" hidden>
-                      
+                      <!--
+      <div class="card simple-card">
+      <img src="roxo.jpg" alt="Image" class="card-img">
+      <div class="card-content">
+        <h3 class="card-title">Card Simples</h3>
+        <p class="card-text">Este é um exemplo de um card simples com uma imagem e texto.</p>
+      </div>
+    </div>
+                      -->
                     </p>
                     <button onclick="copiarTextoHtml()">Copiar</button>
                   </div>
@@ -108,13 +105,42 @@
                     <section class="content">
                       <div class="slides">
                         <div class="slide">
-                            <img src="../../images/" alt="Foto Slide1">
+                            <img src="../../images/cards/card1css1" alt="Foto Slide1">
                         </div>
                       </div>
                     </section>
 <!--CODIGO CSS-->
                       <p id="codigoCss" hidden>
-                        
+                        <!--
+
+.simple-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.9em;
+    color: #555;
+  }
+                        -->
                       </p>
                       <button onclick="copiarTextoCss()">Copiar</button>
                   </div>
@@ -124,9 +150,9 @@
           <!--Card 2-->
           <div class="card">
             <strong>
-            <p class="title"></p>
+            <p class="title">Card 2</p>
             </strong>
-            <img src="../../images/" alt="Exemplo de ">
+            <img src="../../images/cards/card2.png" alt="Exemplo de Card">
             <div class="descricao">
               <p></p>
               <button class="open-modal-button2">
@@ -139,32 +165,39 @@
           <div class="modal2">
             <div class="close"><button class="close-btn2" onclick="closeModal2()">Close</button></div>
             <div class="modalpt12">
-              <img src="../../images/" alt="Foto de Teste">
+              <img src="../../images/cards/card2.png" alt="Foto do Card2">
             </div>
             <div class="modalpt22">
                 <div class="codHtml">
                   <section class="content">
                     <div class="slides">
                       <input type="radio" name="slide" id="slide1_2" checked>
-                      <input type="radio" name="slide" id="slide2_2">
-                      <input type="radio" name="slide" id="slide3_2">
-                      <input type="radio" name="slide" id="slide4_2">
-                      <input type="radio" name="slide" id="slide5_2">
                       <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
+                          <img src="../../images/cards/card2html1.png" alt="Foto Slide1">
                       </div>
-                      <div class="slide">
-                          <img src="../../images/" alt="Slide2">
-                      </div>
-                      <div class="navigation">
-                        <label class="bar" for="slide1_2"></label>
-                        <label class="bar" for="slide2_2"></label>
-                    </div>
                     </div>
                   </section>
 <!--Codigo HTML2-->
                   <p id="codigoHtml2" hidden>
-                    
+                    <!--
+                      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<bod>
+        <div class="card hover-card">
+            <div class="card-content">
+              <h3 class="card-title">Card com Hover</h3>
+              <p class="card-text">Passe o mouse sobre este card para ver o efeito.</p>
+            </div>
+          </div>          
+</bod>
+</html>
+                    -->
                   </p>
                   <button onclick="copiarTextoHtml2()">Copiar</button>
                 </div>
@@ -172,29 +205,45 @@
                   <section class="content">
                     <div class="slides">
                       <input type="radio" name="slide" id="slide1_2" checked>
-                      <input type="radio" name="slide" id="slide2_22">
-                      <input type="radio" name="slide" id="slide3_22">
-                      <input type="radio" name="slide" id="slide4_22">
-                      <input type="radio" name="slide" id="slide5_22">
                       <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
+                          <img src="../../images/cards/card2css1.png" alt="Slide1">
                       </div>
-                      <div class="slide">
-                        <img src="../../images/" alt="Slide2">
-                      </div>
-                      <div class="slide">
-                        <img src="../../images/" alt="Slide3">
-                      </div>
-                      <div class="navigation">
-                        <label class="bar" for="slide1_2"></label>
-                        <label class="bar" for="slide2_22"></label>
-                        <label class="bar" for="slide3_22"></label>
-                    </div>
                     </div>
                   </section>
 <!--CODIGOCSS2-->
                     <p id="codigoCss2" hidden>
-                      
+                      <!--
+                        /* card2 */
+
+.hover-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s, box-shadow 0.2s;
+  }
+  
+  .hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.9em;
+    color: #555;
+  }
+                      -->
                     </p>
                     <button onclick="copiarTextoCss2()">Copiar</button>
                 </div>
@@ -204,9 +253,9 @@
             <!--Card 3-->
             <div class="card">
               <strong>
-              <p class="title"></p>
+              <p class="title">Card 3</p>
               </strong>
-              <img src="../../images/" alt="Exemplo de">
+              <img src="../../images/cards/card3.png" alt="Exemplo de Card">
               <div class="descricao">
                 <p></p>
                 <button class="open-modal-button3">
@@ -219,40 +268,29 @@
             <div class="modal3">
               <div class="close"><button class="close-btn3" onclick="closeModal3()">Close</button></div>
               <div class="modalpt13">
-                <img src="" alt="Foto de ">
+                <img src="../../images/cards/card3.png" alt="Foto do Card3">
               </div>
               <div class="modalpt23">
                   <div class="codHtml">
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
-                        <input type="radio" name="slide" id="slide2_3">
-                        <input type="radio" name="slide" id="slide3_3">
-                        <input type="radio" name="slide" id="slide4_3">
-                        <input type="radio" name="slide" id="slide5_3">
                         <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
+                            <img src="../../images/cards/card3html1.png" alt="Slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1_3"></label>
-                          <label class="bar" for="slide2_3"></label>
-                          <label class="bar" for="slide3_3"></label>
-                          <label class="bar" for="slide4_3"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGOHTML3-->
                     <div id="codigoHtml3" hidden>
-
+                      <!--
+            <div class="card button-card">
+            <div class="card-content">
+              <h3 class="card-title">Card com Botão</h3>
+              <p class="card-text">Este card possui um botão que leva a um link.</p>
+              <a href="https://example.com" class="card-button">Saiba Mais</a>
+            </div>
+          </div>    
+                      -->
                     </div>
                     <button onclick="copiarTextoHtml3()">Copiar</button>
                   </div>
@@ -260,42 +298,47 @@
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
-                        <input type="radio" name="slide" id="slide2_32">
-                        <input type="radio" name="slide" id="slide3_32">
-                        <input type="radio" name="slide" id="slide4_32">
-                        <input type="radio" name="slide" id="slide5_32">
-                        <input type="radio" name="slide" id="slide6_32">
                         <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
+                            <img src="../../images/cards/card3css1.png" alt="Slide1">
                         </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide5">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide6">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1_3"></label>
-                          <label class="bar" for="slide2_32"></label>
-                          <label class="bar" for="slide3_32"></label>
-                          <label class="bar" for="slide4_32"></label>
-                          <label class="bar" for="slide5_32"></label>
-                          <label class="bar" for="slide6_32"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGOCSS3-->
                       <p id="codigoCss3" hidden>
-                        
+                        <!--
+                          .button-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card-content {
+    padding: 15px;
+  }
+  .card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .card-text {
+    font-size: 0.9em;
+    color: #555;
+  }
+  .card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+                        -->
                       </p>
                       <button onclick="copiarTextoCss3()">Copiar</button>
                   </div>
@@ -303,7 +346,7 @@
             </div>
           </div>
             <!--Card 4-->
-            
+              
             
         </section>
     </main>
