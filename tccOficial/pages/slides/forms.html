@@ -58,9 +58,9 @@
           <!--Card 1-->
           <div class="card">
               <strong>
-              <p class="title"></p>
+              <p class="title">Forms 1</p>
               </strong>
-              <img src="../../images/sidebars/" alt="Exemplo de ">
+              <img src="../../images/forms/forms1.png" alt="Exemplo de Forms">
               <div class="descricao">
                 <p></p>
                 <button class="open-modal-button">
@@ -73,7 +73,7 @@
             <div class="modal">
               <div class="close"><button class="close-btn" onclick="closeModal()">Close</button></div>
               <div class="modalpt1">
-                <img src="../../images/" alt="Foto de Teste">
+                <img src="../../images/forms/forms1.png" alt="Foto do Forms1">
               </div>
               <div class="modalpt2">
                   <!--PARTE DO MODAL Q É DO CODIGOHTML-->
@@ -81,25 +81,31 @@
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                        <input type="radio" name="slide" id="slide4">
-                        <input type="radio" name="slide" id="slide5">
                         <div class="slide s1">
-                            <img src="../../images/" alt="Foto slide1">
+                            <img src="../../images/forms1html1" alt="Foto slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/" alt="Foto slide2">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1"></label>
-                          <label class="bar" for="slide2"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGO HTML-->
                     <p id="codigoHtml" hidden>
-                      
+                      <!--
+                        <div class="container">
+        <div class="form login-form">
+            <h2>Login</h2>
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit">Login</button>
+            </form>
+          </div>          
+    </div>
+                      -->
                     </p>
                     <button onclick="copiarTextoHtml()">Copiar</button>
                   </div>
@@ -107,14 +113,73 @@
                   <div class="codCss">
                     <section class="content">
                       <div class="slides">
-                        <div class="slide">
-                            <img src="../../images/" alt="Foto Slide1">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2" checked>
+                        <div class="slide s1">
+                            <img src="../../images/forms1css1" alt="Foto Slide1">
                         </div>
+                        <div class="slide">
+                          <img src="../../images/forms1css2" alt="Foto Slide 2">
+                        </div>
+                        <div class="navigation">
+                          <label class="bar" for="slide1"></label>
+                          <label class="bar" for="slide2"></label>
+                      </div>
                       </div>
                     </section>
 <!--CODIGO CSS-->
                       <p id="codigoCss" hidden>
-                        
+                        <!--
+                          /* forms1 */
+
+.login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+                        -->
                       </p>
                       <button onclick="copiarTextoCss()">Copiar</button>
                   </div>
@@ -124,9 +189,9 @@
           <!--Card 2-->
           <div class="card">
             <strong>
-            <p class="title"></p>
+            <p class="title">Forms 2</p>
             </strong>
-            <img src="../../images/" alt="Exemplo de ">
+            <img src="../../images/forms/forms2.png" alt="Exemplo de Forms">
             <div class="descricao">
               <p></p>
               <button class="open-modal-button2">
@@ -139,32 +204,42 @@
           <div class="modal2">
             <div class="close"><button class="close-btn2" onclick="closeModal2()">Close</button></div>
             <div class="modalpt12">
-              <img src="../../images/" alt="Foto de Teste">
+              <img src="../../images/forms/forms2.png" alt="Foto do Forms 2">
             </div>
             <div class="modalpt22">
                 <div class="codHtml">
                   <section class="content">
                     <div class="slides">
                       <input type="radio" name="slide" id="slide1_2" checked>
-                      <input type="radio" name="slide" id="slide2_2">
-                      <input type="radio" name="slide" id="slide3_2">
-                      <input type="radio" name="slide" id="slide4_2">
-                      <input type="radio" name="slide" id="slide5_2">
                       <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
+                          <img src="../../images/forms/forms2html1" alt="Slide1">
                       </div>
-                      <div class="slide">
-                          <img src="../../images/" alt="Slide2">
-                      </div>
-                      <div class="navigation">
-                        <label class="bar" for="slide1_2"></label>
-                        <label class="bar" for="slide2_2"></label>
-                    </div>
                     </div>
                   </section>
 <!--Codigo HTML2-->
                   <p id="codigoHtml2" hidden>
-                    
+                    <!--
+                      <div class="container">
+        <div class="form register-form">
+            <h2>Register</h2>
+            <form>
+              <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit">Register</button>
+            </form>
+          </div>          
+    </div>
+                    -->
                   </p>
                   <button onclick="copiarTextoHtml2()">Copiar</button>
                 </div>
@@ -173,28 +248,72 @@
                     <div class="slides">
                       <input type="radio" name="slide" id="slide1_2" checked>
                       <input type="radio" name="slide" id="slide2_22">
-                      <input type="radio" name="slide" id="slide3_22">
-                      <input type="radio" name="slide" id="slide4_22">
-                      <input type="radio" name="slide" id="slide5_22">
                       <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
+                          <img src="../../images/forms/forms2css1" alt="Slide1">
                       </div>
                       <div class="slide">
-                        <img src="../../images/" alt="Slide2">
-                      </div>
-                      <div class="slide">
-                        <img src="../../images/" alt="Slide3">
+                        <img src="../../images/forms/forms2css2" alt="Slide2">
                       </div>
                       <div class="navigation">
                         <label class="bar" for="slide1_2"></label>
                         <label class="bar" for="slide2_22"></label>
-                        <label class="bar" for="slide3_22"></label>
                     </div>
                     </div>
                   </section>
 <!--CODIGOCSS2-->
                     <p id="codigoCss2" hidden>
-                      
+                      <!--
+                        /* forms2 */
+
+.register-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .register-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+
+                      -->
                     </p>
                     <button onclick="copiarTextoCss2()">Copiar</button>
                 </div>
@@ -204,9 +323,9 @@
             <!--Card 3-->
             <div class="card">
               <strong>
-              <p class="title"></p>
+              <p class="title">Forms 3</p>
               </strong>
-              <img src="../../images/" alt="Exemplo de">
+              <img src="../../images/forms/forms3.png" alt="Exemplo de Forms">
               <div class="descricao">
                 <p></p>
                 <button class="open-modal-button3">
@@ -219,40 +338,42 @@
             <div class="modal3">
               <div class="close"><button class="close-btn3" onclick="closeModal3()">Close</button></div>
               <div class="modalpt13">
-                <img src="" alt="Foto de ">
+                <img src="../../images/forms/forms3.png" alt="Foto do Forms">
               </div>
               <div class="modalpt23">
                   <div class="codHtml">
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
-                        <input type="radio" name="slide" id="slide2_3">
-                        <input type="radio" name="slide" id="slide3_3">
-                        <input type="radio" name="slide" id="slide4_3">
-                        <input type="radio" name="slide" id="slide5_3">
                         <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
+                            <img src="../../images/forms/forms3html1" alt="Slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1_3"></label>
-                          <label class="bar" for="slide2_3"></label>
-                          <label class="bar" for="slide3_3"></label>
-                          <label class="bar" for="slide4_3"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGOHTML3-->
                     <div id="codigoHtml3" hidden>
-
+                      <!--
+                        <div class="container">
+        <div class="form contact-form">
+            <h2>Contact Us</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Send</button>
+            </form>
+          </div>          
+    </div>
+                      -->
                     </div>
                     <button onclick="copiarTextoHtml3()">Copiar</button>
                   </div>
@@ -261,41 +382,72 @@
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
                         <input type="radio" name="slide" id="slide2_32">
-                        <input type="radio" name="slide" id="slide3_32">
-                        <input type="radio" name="slide" id="slide4_32">
-                        <input type="radio" name="slide" id="slide5_32">
-                        <input type="radio" name="slide" id="slide6_32">
                         <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
+                            <img src="../../images/forms/forms3css1" alt="Slide1">
                         </div>
                         <div class="slide">
-                          <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide5">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide6">
+                          <img src="../../images/forms/forms3ss2" alt="Slide2">
                         </div>
                         <div class="navigation">
                           <label class="bar" for="slide1_3"></label>
                           <label class="bar" for="slide2_32"></label>
-                          <label class="bar" for="slide3_32"></label>
-                          <label class="bar" for="slide4_32"></label>
-                          <label class="bar" for="slide5_32"></label>
-                          <label class="bar" for="slide6_32"></label>
                       </div>
                       </div>
                     </section>
 <!--CODIGOCSS3-->
                       <p id="codigoCss3" hidden>
-                        
+                        <!--
+                          /* forms3 */
+
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #17a2b8;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #138496;
+  }
+                        -->
                       </p>
                       <button onclick="copiarTextoCss3()">Copiar</button>
                   </div>
