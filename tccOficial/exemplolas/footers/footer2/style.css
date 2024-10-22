@@ -4,38 +4,29 @@
     padding: 20px 0;
     font-family: Arial, sans-serif;
   }
-  
   .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0 auto; padding: 0 20px;
   }
-  
   .footer-links {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0; margin: 0;
     display: flex;
   }
-  
   .footer-links li {
     margin-left: 20px;
   }
-  
   .footer-links a {
     color: white;
     text-decoration: none;
     transition: color 0.2s;
   }
-  
   .footer-links a:hover {
     color: #ddd;
-  }
-  
+  }  
   .link-footer p {
     margin: 0;
   }
-  
