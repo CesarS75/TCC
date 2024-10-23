@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebars</title>
+    <title>Modals</title>
     <link rel="stylesheet" href="../../css/contents/stylepages.css">
     <link rel="stylesheet" href="../../css/contents/modal.css">
     <!--fonte bungee-->
@@ -49,8 +49,8 @@
               <a class="navside" href ="../slides/modals.html">modals</a>
               <a class="navside" href ="../slides/forms.html">forms</a>
               <a class="navside" href ="../slides/alerts.html">alerts</a>
-              <a class="navside" href ="../slides/button.html">buttons</a>
-              <a class="navside" href ="../slides/card.html">cards</a>
+              <a class="navside" href ="../slides/buttons.html">buttons</a>
+              <a class="navside" href ="../slides/cards.html">cards</a>
               <a class="navside" href ="../slides/pgbars.html">pgbars</a>
             </div>
       </article>
@@ -60,7 +60,7 @@
               <strong>
               <p class="title"></p>
               </strong>
-              <img src="../../images/sidebars/" alt="Exemplo de ">
+              <img src="../../images/modals/modal1.png" id="nH" alt="Exemplo de Modal">
               <div class="descricao">
                 <p></p>
                 <button class="open-modal-button">
@@ -73,7 +73,7 @@
             <div class="modal">
               <div class="close"><button class="close-btn" onclick="closeModal()">Close</button></div>
               <div class="modalpt1">
-                <img src="../../images/" alt="Foto de Teste">
+                <img src="../../images/modals/modal1.png" id="nH" alt="Foto do Modal 1">
               </div>
               <div class="modalpt2">
                   <!--PARTE DO MODAL Q É DO CODIGOHTML-->
@@ -82,14 +82,11 @@
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1" checked>
                         <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                        <input type="radio" name="slide" id="slide4">
-                        <input type="radio" name="slide" id="slide5">
                         <div class="slide s1">
-                            <img src="../../images/" alt="Foto slide1">
+                            <img src="../../images/modals/modal1html1.png" alt="Foto slide1">
                         </div>
                         <div class="slide">
-                            <img src="../../images/" alt="Foto slide2">
+                            <img src="../../images/modals/modal1html2.png" alt="Foto slide2">
                         </div>
                         <div class="navigation">
                           <label class="bar" for="slide1"></label>
@@ -99,22 +96,83 @@
                     </section>
 <!--CODIGO HTML-->
                     <p id="codigoHtml" hidden>
-                      
+                      <!--
+                      <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .close {
+            color: red;
+            font-size: 24px;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<bod>
+    <button id="openModalBtn">Abrir Modal</button>
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <p>Este é um modal simples!</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('simpleModal');
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        openModalBtn.onclick = function() {
+            modal.style.display = 'flex';
+        }
+
+        closeModalBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</bod>
+</html>
+                      -->
                     </p>
                     <button onclick="copiarTextoHtml()">Copiar</button>
                   </div>
                   <!--PARTE DO MODAL Q É DO CODIGOCSS-->
                   <div class="codCss">
                     <section class="content">
-                      <div class="slides">
-                        <div class="slide">
-                            <img src="../../images/" alt="Foto Slide1">
-                        </div>
-                      </div>
+                      <code><p>Não há CSS</p></code>
                     </section>
 <!--CODIGO CSS-->
                       <p id="codigoCss" hidden>
-                        
+                        0
                       </p>
                       <button onclick="copiarTextoCss()">Copiar</button>
                   </div>
@@ -126,7 +184,7 @@
             <strong>
             <p class="title"></p>
             </strong>
-            <img src="../../images/" alt="Exemplo de ">
+            <img src="../../images/modals/modal2.png" id="nH" alt="Exemplo de Modal">
             <div class="descricao">
               <p></p>
               <button class="open-modal-button2">
@@ -139,7 +197,7 @@
           <div class="modal2">
             <div class="close"><button class="close-btn2" onclick="closeModal2()">Close</button></div>
             <div class="modalpt12">
-              <img src="../../images/" alt="Foto de Teste">
+              <img src="../../images/modals/modal2.png" id="nH" alt="Foto do Modal 2">
             </div>
             <div class="modalpt22">
                 <div class="codHtml">
@@ -147,14 +205,11 @@
                     <div class="slides">
                       <input type="radio" name="slide" id="slide1_2" checked>
                       <input type="radio" name="slide" id="slide2_2">
-                      <input type="radio" name="slide" id="slide3_2">
-                      <input type="radio" name="slide" id="slide4_2">
-                      <input type="radio" name="slide" id="slide5_2">
                       <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
+                          <img src="../../images/modals/modal2html1.png" alt="Slide1">
                       </div>
                       <div class="slide">
-                          <img src="../../images/" alt="Slide2">
+                          <img src="../../images/modals/modal2html2.png" alt="Slide2">
                       </div>
                       <div class="navigation">
                         <label class="bar" for="slide1_2"></label>
@@ -164,37 +219,80 @@
                   </section>
 <!--Codigo HTML2-->
                   <p id="codigoHtml2" hidden>
-                    
+                    <!--
+                    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: top 0.5s;
+        }
+        .modal.show .modal-content {
+            top: 50%;
+        }
+    </style>
+</head>
+<bod>
+    <button id="openModalBtn2">Abrir Modal com Deslize</button>
+
+    <div id="slideModal" class="modal">
+        <div class="modal-content">
+            <p>Modal com animação de deslize!</p>
+        </div>
+    </div>
+
+    <script>
+        const slideModal = document.getElementById('slideModal');
+        const openModalBtn2 = document.getElementById('openModalBtn2');
+
+        openModalBtn2.onclick = function() {
+            slideModal.style.display = 'block';
+            setTimeout(() => slideModal.classList.add('show'), 10);
+        }
+
+        window.onclick = function(event) {
+            if (event.target === slideModal) {
+                slideModal.classList.remove('show');
+                setTimeout(() => slideModal.style.display = 'none', 500);
+            }
+        }
+    </script>
+</bod>
+</html>
+
+                    -->
                   </p>
                   <button onclick="copiarTextoHtml2()">Copiar</button>
                 </div>
                 <div class="codCss">
                   <section class="content">
                     <div class="slides">
-                      <input type="radio" name="slide" id="slide1_2" checked>
-                      <input type="radio" name="slide" id="slide2_22">
-                      <input type="radio" name="slide" id="slide3_22">
-                      <input type="radio" name="slide" id="slide4_22">
-                      <input type="radio" name="slide" id="slide5_22">
-                      <div class="slide s2">
-                          <img src="../../images/" alt="Slide1">
-                      </div>
-                      <div class="slide">
-                        <img src="../../images/" alt="Slide2">
-                      </div>
-                      <div class="slide">
-                        <img src="../../images/" alt="Slide3">
-                      </div>
-                      <div class="navigation">
-                        <label class="bar" for="slide1_2"></label>
-                        <label class="bar" for="slide2_22"></label>
-                        <label class="bar" for="slide3_22"></label>
-                    </div>
-                    </div>
+                      <code><p>Não há CSS</p></code>
                   </section>
 <!--CODIGOCSS2-->
                     <p id="codigoCss2" hidden>
-                      
+                      0
                     </p>
                     <button onclick="copiarTextoCss2()">Copiar</button>
                 </div>
@@ -206,7 +304,7 @@
               <strong>
               <p class="title"></p>
               </strong>
-              <img src="../../images/" alt="Exemplo de">
+              <img src="../../images/modals/modal3.png" id="nH" alt="Exemplo de">
               <div class="descricao">
                 <p></p>
                 <button class="open-modal-button3">
@@ -219,7 +317,7 @@
             <div class="modal3">
               <div class="close"><button class="close-btn3" onclick="closeModal3()">Close</button></div>
               <div class="modalpt13">
-                <img src="" alt="Foto de ">
+                <img src="../../images/modals/modal3.png" id="nH" alt="Foto de ">
               </div>
               <div class="modalpt23">
                   <div class="codHtml">
@@ -227,75 +325,78 @@
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
                         <input type="radio" name="slide" id="slide2_3">
-                        <input type="radio" name="slide" id="slide3_3">
-                        <input type="radio" name="slide" id="slide4_3">
-                        <input type="radio" name="slide" id="slide5_3">
                         <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
+                            <img src="../../images/modals/modal3html1.png" alt="Slide1">
                         </div>
                         <div class="slide">
-                            <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
+                            <img src="../../images/modals/modal3html2.png" alt="Slide2">
                         </div>
                         <div class="navigation">
                           <label class="bar" for="slide1_3"></label>
                           <label class="bar" for="slide2_3"></label>
-                          <label class="bar" for="slide3_3"></label>
-                          <label class="bar" for="slide4_3"></label>
                       </div>
                       </div>
                     </section>
 <!--CODIGOHTML3-->
                     <div id="codigoHtml3" hidden>
+<!--
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<bod>
+    <div id="autoModal" class="modal">
+        <div class="modal-content">
+            <p>Este modal fecha automaticamente em 5 segundos.</p>
+        </div>
+    </div>
 
+    <script>
+        const autoModal = document.getElementById('autoModal');
+
+        window.onload = function() {
+            autoModal.style.display = 'flex';
+            setTimeout(() => autoModal.style.display = 'none', 5000);
+        }
+    </script>
+</bod>
+</html>
+                      
+-->
                     </div>
                     <button onclick="copiarTextoHtml3()">Copiar</button>
                   </div>
                   <div class="codCss">
                     <section class="content">
                       <div class="slides">
-                        <input type="radio" name="slide" id="slide1_3" checked>
-                        <input type="radio" name="slide" id="slide2_32">
-                        <input type="radio" name="slide" id="slide3_32">
-                        <input type="radio" name="slide" id="slide4_32">
-                        <input type="radio" name="slide" id="slide5_32">
-                        <input type="radio" name="slide" id="slide6_32">
-                        <div class="slide s3">
-                            <img src="../../images/" alt="Slide1">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide2">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide3">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide4">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide5">
-                        </div>
-                        <div class="slide">
-                          <img src="../../images/" alt="Slide6">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1_3"></label>
-                          <label class="bar" for="slide2_32"></label>
-                          <label class="bar" for="slide3_32"></label>
-                          <label class="bar" for="slide4_32"></label>
-                          <label class="bar" for="slide5_32"></label>
-                          <label class="bar" for="slide6_32"></label>
-                      </div>
-                      </div>
+                        <code><p>Não há CSS</p></code>
                     </section>
 <!--CODIGOCSS3-->
                       <p id="codigoCss3" hidden>
-                        
+                        0
                       </p>
                       <button onclick="copiarTextoCss3()">Copiar</button>
                   </div>
