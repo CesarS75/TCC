@@ -287,6 +287,7 @@ footer {
 }
 
 footer p {
+    color: var(--font-color);
     margin-right: 0.9rem;
     margin-left: 0.9rem;
 }

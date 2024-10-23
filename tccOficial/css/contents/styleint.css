@@ -205,3 +205,19 @@ p{
     color: var(--res);
     padding: 0.5rem;
 }
+footer {
+    font-family: "Bungee", sans-serif;
+    margin-top: 4rem;
+    background-color:var(--bg-slide-color);
+    width: 100vw;
+    height: 5.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    font-family: "Bungee", sans-serif;
+    color: var(--font-color);
+    margin-right: 0.9rem;
+    margin-left: 0.9rem;
+}

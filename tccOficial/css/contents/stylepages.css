@@ -133,7 +133,7 @@ main {
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
     border: 4px black solid;
-    width: 25vw;
+    width: 25vw; 
     height: 40vh;
     border-radius: 1.5rem;
     flex-direction: column;

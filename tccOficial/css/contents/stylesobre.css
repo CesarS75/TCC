@@ -193,3 +193,19 @@ h2{
     font-style: normal;
     color: var(--res);
 }
+footer {
+    font-family: "Bungee", sans-serif;
+    margin-top: 4rem;
+    background-color:var(--bg-slide-color);
+    width: 100vw;
+    height: 5.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    color: var(--font-color);
+    margin-right: 0.9rem;
+    margin-left: 0.9rem;
+}
