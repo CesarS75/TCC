@@ -1,27 +1,23 @@
-//armazenando na máquina do usuario o tema
-localStorage.setItem('theme', 'dark'); 
-
-//acessado o tema da maquina do usuário
-localStorage.getItem('theme'); 
-// dark
-
-const toggle = document.getElementById("toggle");
-const refresh = document.getElementById("refresh");
-const theme = window.localStorage.getItem("theme");
-
-/* verifica se o tema armazenado no localStorage é escuro
-se sim aplica o tema escuro ao body */
-if (theme === "dark") {
-  document.body.classList.add("dark");
+// Verifica se o tema armazenado no localStorage é escuro e aplica ao body
+function applyTheme(theme) {
+  if (theme === "dark") {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
 }
 
-// event listener para quando o botão de alterar o tema for clicado
-toggle.addEventListener("click", () => {
+// Carrega o tema do localStorage ao iniciar
+const storedTheme = window.localStorage.getItem("theme") || "light"; // Define "light" como padrão se não houver tema
+applyTheme(storedTheme);
 
-  document.body.classList.toggle("dark");
-  if (theme === "dark") {
-    window.localStorage.setItem("theme", "light");
-  }
-  else
-    window.localStorage.setItem("theme", "dark");
+const toggle = document.getElementById("toggle");
+
+// Event listener para quando o botão de alterar o tema for clicado
+toggle.addEventListener("click", () => {
+  // Alterna a classe 'dark' no body
+  const isDark = document.body.classList.toggle("dark");
+
+  // Atualiza o tema no localStorage
+  window.localStorage.setItem("theme", isDark ? "dark" : "light");
 });
