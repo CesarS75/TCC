@@ -81,17 +81,9 @@
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
                         <div class="slide s1">
                             <img src="../../images/pgbars/pgbar1html1.png" alt="Foto slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/pgbars/pgbar1html2.png" alt="Foto slide2">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1"></label>
-                          <label class="bar" for="slide2"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGO HTML-->
@@ -102,25 +94,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .progress-container {
-            width: 100%;
-            background-color: #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .progress-bar {
-            width: 0;
-            height: 30px;
-            background-color: #4caf50;
-            text-align: center;
-            color: white;
-            line-height: 30px;
-            border-radius: 5px;
-        }
-    </style>
 </head>
-<bod>
+<boy>
     <div class="progress-container">
         <div class="progress-bar" id="progressBar">0%</div>
     </div>
@@ -132,14 +107,14 @@
         function move() {
             if (width >= 100) return;
             width++;
-            progressBar.style.width = width + '%';
+            progressBar.style.width = width + '%'; 
             progressBar.innerHTML = width + '%';
             setTimeout(move, 1000); // Mover a cada 100ms
         }
 
         move();
     </script>
-</bod>
+</boy>
 </html>
                       -->
                     </p>
@@ -149,12 +124,31 @@
                   <div class="codCss">
                     <section class="content">
                       <div class="slides">
-                        <code><p>Não há CSS</p></code>
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <div class="slide s1">
+                            <img src="../../images/pgbars/pgbar1css1.png" alt="Foto slide1">
+                        </div>
                       </div>
                     </section>
 <!--CODIGO CSS-->
                       <p id="codigoCss" hidden>
-                        0
+                        <!--
+                        .progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    border-radius: 5px;
+}
+                        -->
                       </p>
                       <button onclick="copiarTextoCss()">Copiar</button>
                   </div>
@@ -186,17 +180,9 @@
                   <section class="content">
                     <div class="slides">
                       <input type="radio" name="slide" id="slide1_2" checked>
-                      <input type="radio" name="slide" id="slide2_2">
                       <div class="slide s2">
                           <img src="../../images/pgbars/pgbar2html1.png" alt="Slide1">
                       </div>
-                      <div class="slide">
-                          <img src="../../images/pgbars/pgbar2html2.png" alt="Slide2">
-                      </div>
-                      <div class="navigation">
-                        <label class="bar" for="slide1_2"></label>
-                        <label class="bar" for="slide2_2"></label>
-                    </div>
                     </div>
                   </section>
 <!--Codigo HTML2-->
@@ -207,23 +193,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .circle-container {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background: conic-gradient(#4caf50 0deg, #ddd 0deg);
-            border-radius: 50%;
-        }
-        .circle-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 20px;
-            color: #4caf50;
-        }
-    </style>
 </head>
 <bod>
     <div class="circle-container" id="circleProgress">
@@ -236,7 +205,7 @@
         const percentage = document.getElementById("percentage");
 
         function updateCircleProgress() {
-            if (angle < 360) {
+            if (angle < 360) { 
                 angle += 3.6; // 1% a cada passo
                 circleProgress.style.background = `conic-gradient(#4caf50 ${angle}deg, #ddd ${angle}deg)`;
                 percentage.innerText = `${Math.floor(angle / 3.6)}%`;
@@ -254,12 +223,31 @@
                 <div class="codCss">
                   <section class="content">
                     <div class="slides">
-                      <code><p>Não há CSS</p></code>
+                      <input type="radio" name="slide" id="slide1_2" checked>
+                      <div class="slide s2">
+                          <img src="../../images/pgbars/pgbar2css1.png" alt="Slide1">
+                      </div>
                     </div>
                   </section>
 <!--CODIGOCSS2-->
                     <p id="codigoCss2" hidden>
-                      0
+                      <!--
+                      .circle-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#4caf50 0deg, #ddd 0deg);
+    border-radius: 50%;
+    }
+.circle-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #4caf50;
+}
+                      -->
                     </p>
                     <button onclick="copiarTextoCss2()">Copiar</button>
                 </div>
@@ -291,17 +279,9 @@
                     <section class="content">
                       <div class="slides">
                         <input type="radio" name="slide" id="slide1_3" checked>
-                        <input type="radio" name="slide" id="slide2_3">
                         <div class="slide s3">
                             <img src="../../images/pgbars/pgbar3html1.png" alt="Slide1">
                         </div>
-                        <div class="slide">
-                            <img src="../../images/pgbars//pgbar3html2.png" alt="Slide2">
-                        </div>
-                        <div class="navigation">
-                          <label class="bar" for="slide1_3"></label>
-                          <label class="bar" for="slide2_3"></label>
-                      </div>
                       </div>
                     </section>
 <!--CODIGOHTML3-->
@@ -312,24 +292,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .dots-container {
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .dot {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #ddd;
-            transition: background-color 0.3s;
-        }
-        .dot.filled {
-            background-color: #4caf50;
-        }
-    </style>
 </head>
 <bod>
     <div class="dots-container">
@@ -341,7 +303,7 @@
         <div class="dot" id="dot6"></div>
         <div class="dot" id="dot7"></div>
         <div class="dot" id="dot8"></div>
-        <div class="dot" id="dot9"></div>
+        <div class="dot" id="dot9"></div> 
         <div class="dot" id="dot10"></div>
     </div>
 
@@ -356,7 +318,7 @@
         }
         fillDots();
     </script>
-</bod>
+</>
 </html>
                       -->
                     </div>
@@ -365,12 +327,32 @@
                   <div class="codCss">
                     <section class="content">
                       <div class="slides">
-                        <code><p>Não há CSS</p></code>
+                        <input type="radio" name="slide" id="slide1_3" checked>
+                        <div class="slide s3">
+                            <img src="../../images/pgbars/pgbar3css1.png" alt="Slide1">
+                        </div>
                       </div>
                     </section>
 <!--CODIGOCSS3-->
                       <p id="codigoCss3" hidden>
-                        0
+                        <!--
+                        .dots-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    transition: background-color 0.3s;
+}
+.dot.filled {
+    background-color: #4caf50;
+}
+                        -->
                       </p>
                       <button onclick="copiarTextoCss3()">Copiar</button>
                   </div>
